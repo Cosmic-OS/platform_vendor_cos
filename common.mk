@@ -37,6 +37,12 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/cos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/cos/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
+
 # Bootanimation
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
