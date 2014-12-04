@@ -135,6 +135,9 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Squisher Location
+SQUISHER_SCRIPT := vendor/cos/tools/squisher
+
 # COS Versioning
 ANDROID_VERSION = 7.0
 PLATFORM_VERSION_CODENAME = REL
