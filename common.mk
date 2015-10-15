@@ -130,7 +130,8 @@ PRODUCT_PACKAGES += \
      OmniSwitch \
      OmniJaws \
      OTAUpdates \
-     CosmicWalls
+     CosmicWalls \
+     Chromium
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
