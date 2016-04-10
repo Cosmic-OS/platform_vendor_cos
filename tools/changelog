@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Exports
-dir=$ANDROID_BUILD_TOP
+. $ANDROID_BUILD_TOP/vendor/cos/tools/colors
+
 out=$dir/out/target/product
 
 export Changelog=Changelog.txt
@@ -23,11 +24,11 @@ k=$(expr $i - 1)
 	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
 
 	# Line with after --- until was too long for a small ListView
-	echo '===============' >> $Changelog;
+	echo '====================' >> $Changelog;
 	echo  "     "$Until_Date    >> $Changelog;
-	echo '===============' >> $Changelog;
+	echo '====================' >> $Changelog;
 	# Cycle through every repo to find commits between 2 dates
-	repo forall -pc 'git log --pretty=format:"[%h]  %s" --decorate --after=$After_Date --until=$Until_Date' >> $Changelog
+	repo forall -pc 'git log --pretty=format:"%h  %s  [%cn]" --decorate --after=$After_Date --until=$Until_Date' >> $Changelog
 	echo >> $Changelog;
         echo >> $Changelog;
 done
