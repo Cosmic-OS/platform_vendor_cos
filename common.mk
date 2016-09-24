@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
-    librs_jni 
+    librs_jni
 
 # Offline charging animation
 PRODUCT_PACKAGES += \
@@ -160,6 +160,9 @@ PRODUCT_GENERIC_PROPERTIES += persist.sys.recovery_update=false
 # Dialer fix
 PRODUCT_COPY_FILES +=  \
     vendor/cos/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
+# include definitions for SDCLANG
+include vendor/cos/sdclang/sdclang.mk
 
 # COS Versioning
 ANDROID_VERSION = 8.1.0
