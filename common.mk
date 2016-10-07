@@ -77,6 +77,14 @@ PRODUCT_PACKAGES += \
     su \
     Terminal
 
+# Substratum
+ PRODUCT_COPY_FILES += \
+vendor/cos/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
+
+# Extra Optional packages
+PRODUCT_PACKAGES += \
+     masquerade
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
