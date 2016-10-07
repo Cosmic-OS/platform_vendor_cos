@@ -1,0 +1,2 @@
+# Allow init to send class_* trigger events
+allow init property_socket:sock_file write;
