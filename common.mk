@@ -138,24 +138,29 @@ endif
 
 # COS Versioning
 ANDROID_VERSION = 7.0
-COS_VERSION = v1.0
-
+PLATFORM_VERSION_CODENAME = REL
 ifndef COS_BUILD_TYPE
-    COS_BUILD_TYPE := UNOFFICIAL
-    PLATFORM_VERSION_CODENAME := UNOFFICIAL
+    COS_BUILD_TYPE := beta
+endif
+COS_VER := 0.1
+ifdef COS_BUILD_TYPE
+    COS_VERSION_NUMBER = $(COS_VER)-$(COS_BUILD_TYPE)
+else
+    COS_VERSION_NUMBER = $(COS_VER)
 endif
 
-COS_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(COS_VERSION)-$(COS_BUILD_TYPE) 
-COS_MOD_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(COS_VERSION)-$(COS_BUILD_TYPE)
+ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
+    COS_BUILD_TYPE :=$(TARGET_UNOFFICIAL_BUILD_ID)
+endif
+
+# Set all versions
+COS_VERSION := COS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)
+COS_MOD_VERSION := COS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cos.version=$(COS_VERSION) \
-  ro.cos.releasetype=$(COS_BUILD_TYPE) \
-  ro.modversion=$(COS_BUILD_TYPE)-$(COS_VERSION)
-
-COS_DISPLAY_VERSION := $(COS_VERSION)
-
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cos.display.version=$(COS_DISPLAY_VERSION)
-
+    BUILD_DISPLAY_ID=$(BUILD_ID) \
+    ro.cos.version=$(COS_VERSION_NUMBER) \
+    ro.mod.version=$(COS_BUILD_TYPE)-v$(COS_VERSION_NUMBER) \
+    
 $(call inherit-product-if-exists, vendor/extra/product.mk)
