@@ -52,7 +52,6 @@ PRODUCT_COPY_FILES += \
 # Misc packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Browser \
     MusicFX \
     libemoji \
     libsepol \
