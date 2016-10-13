@@ -28,7 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/cos/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
 # Bootanimation
-include vendor/cos/config/bootanimation.mk
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
 # init.d support
 PRODUCT_COPY_FILES += \
