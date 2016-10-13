@@ -151,6 +151,7 @@ else
     COS_VERSION_NUMBER = $(COS_VER)
 endif
 
+<<<<<<< HEAD
 ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE :=$(TARGET_UNOFFICIAL_BUILD_ID)
 endif
@@ -164,5 +165,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.cos.version=$(COS_VERSION_NUMBER) \
     ro.mod.version=$(COS_BUILD_TYPE)-v$(COS_VERSION_NUMBER) \
-    
+
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+
+# Include UBER common configuration
+include vendor/cos/config/uber.mk
