@@ -151,7 +151,6 @@ else
     COS_VERSION_NUMBER = $(COS_VER)
 endif
 
-<<<<<<< HEAD
 ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE :=$(TARGET_UNOFFICIAL_BUILD_ID)
 endif
