@@ -80,6 +80,11 @@ PRODUCT_PACKAGES += \
  PRODUCT_COPY_FILES += \
 vendor/cos/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
 
+# Pixel Launcher
+PRODUCT_COPY_FILES += \
+vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      masquerade
