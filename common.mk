@@ -88,6 +88,10 @@ vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/Pixe
  PRODUCT_COPY_FILES += \
 vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
+# Adblock
+ PRODUCT_COPY_FILES += \
+vendor/cos/prebuilt/common/app/Adblock.apk:system/app/Adblock/Adblock.apk
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      masquerade
