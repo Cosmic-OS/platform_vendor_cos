@@ -91,7 +91,8 @@ vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/K
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      masquerade \
-     OmniSwitch
+     OmniSwitch \
+     Camera
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
