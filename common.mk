@@ -30,6 +30,11 @@ PRODUCT_COPY_FILES += \
 # Bootanimation
 include vendor/cos/config/bootanimation.mk
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+   vendor/cos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/cos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/bin/sysinit:system/bin/sysinit \
