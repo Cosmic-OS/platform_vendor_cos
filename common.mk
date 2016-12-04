@@ -98,7 +98,7 @@ vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/K
 PRODUCT_PACKAGES += \
      masquerade \
      OmniSwitch \
-     Camera \
+     SnapdragonCamera \
      LockClock
 
 # Stagefright FFMPEG plugin
