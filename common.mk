@@ -102,7 +102,8 @@ PRODUCT_PACKAGES += \
      masquerade \
      OmniSwitch \
      SnapdragonCamera \
-     LockClock
+     LockClock \
+     CosmicOTA
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
