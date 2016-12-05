@@ -82,20 +82,21 @@ PRODUCT_PACKAGES += \
     Terminal
 
 # Substratum
- PRODUCT_COPY_FILES += \
-vendor/cos/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
 
 # Pixel Launcher
- PRODUCT_COPY_FILES += \
-vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
-vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
 
 # KernelAdiutor
- PRODUCT_COPY_FILES += \
-vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
 # Amaze File Manager
-vendor/cos/prebuilt/common/app/AmazeFileManager.apk:system/priv-app/AmazeFileManager/AmazeFileManager.apk
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/AmazeFileManager.apk:system/priv-app/AmazeFileManager/AmazeFileManager.apk
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
