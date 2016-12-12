@@ -161,7 +161,7 @@ endif
 SQUISHER_SCRIPT := vendor/cos/tools/squisher
 
 # COS Versioning
-ANDROID_VERSION = 7.0
+ANDROID_VERSION = 7.1
 PLATFORM_VERSION_CODENAME = REL
 
 ifndef COS_BUILD_TYPE
@@ -174,7 +174,7 @@ else
 endif
 endif
 
-COS_VER := 1.1
+COS_VER := 1.2
 ifdef COS_BUILD_TYPE
     COS_VERSION_NUMBER = $(COS_VER)-$(COS_BUILD_TYPE)
 else
