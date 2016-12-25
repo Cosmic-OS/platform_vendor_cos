@@ -24,7 +24,7 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <string name="config_mms_user_agent">AOSP</string>
+    <string name="config_mms_user_agent">Cosmic-OS</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based

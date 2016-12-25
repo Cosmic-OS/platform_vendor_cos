@@ -101,9 +101,8 @@ PRODUCT_COPY_FILES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      masquerade \
-     OmniSwitch \
+     SnapdragonMusic \
      SnapdragonCamera \
-     LockClock \
      CosmicOTA
 
 # Stagefright FFMPEG plugin
@@ -161,7 +160,7 @@ endif
 SQUISHER_SCRIPT := vendor/cos/tools/squisher
 
 # COS Versioning
-ANDROID_VERSION = 7.1
+ANDROID_VERSION = 7.1.1
 PLATFORM_VERSION_CODENAME = REL
 
 ifndef COS_BUILD_TYPE
