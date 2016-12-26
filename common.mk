@@ -195,8 +195,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-# Include UBER common configuration
-include vendor/cos/config/uber.mk
-
 # Included for OTA
 COMMON_OTA_OUT := vendor/cosmic/ota
