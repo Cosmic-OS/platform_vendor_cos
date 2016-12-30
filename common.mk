@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
     SnapdragonGallery \
     SnapdragonMusic
 
+# OMS
+PRODUCT_PACKAGES += \
+    masquerade
+
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
     SoundRecorder
