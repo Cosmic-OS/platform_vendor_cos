@@ -162,6 +162,12 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# DUI
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
 # COS Versioning
 ANDROID_VERSION = 7.1.2
 PLATFORM_VERSION_CODENAME = REL
@@ -211,4 +217,3 @@ ifeq ($(COS_RELEASE),true)
 endif
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-
