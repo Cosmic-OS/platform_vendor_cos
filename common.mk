@@ -197,3 +197,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 # Included for OTA
 COMMON_OTA_OUT := vendor/cosmic/ota
+
+# DUI
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
