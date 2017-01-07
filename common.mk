@@ -75,7 +75,8 @@ PRODUCT_PACKAGES += \
     oprofiled \
     sqlite3 \
     strace \
-    Terminal
+    Terminal \
+    WallpaperPicker
 
 # Telephony packages
 PRODUCT_PACKAGES += \
