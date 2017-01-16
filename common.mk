@@ -174,26 +174,22 @@ else
 endif
 endif
 
-COS_VER := 1.2
-ifdef COS_BUILD_TYPE
-    COS_VERSION_NUMBER = $(COS_VER)-$(COS_BUILD_TYPE)
-else
-    COS_VERSION_NUMBER = $(COS_VER)
+ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
+    COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
 
-ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
-    COS_BUILD_TYPE :=$(TARGET_UNOFFICIAL_BUILD_ID)
-endif
+COS_VERSION_NUMBER := 1.2
+COS_VER := $(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 
 # Set all versions
-COS_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)
-COS_MOD_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)
+COS_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VER)
+COS_MOD_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VER)
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
-    ro.cos.version=$(COS_VERSION_NUMBER) \
-    ro.mod.version=$(COS_BUILD_TYPE)-v$(COS_VERSION_NUMBER) \
+    ro.cos.version=$(COS_VER) \
+    ro.mod.version=v$(COS_VER)
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
