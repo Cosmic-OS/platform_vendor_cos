@@ -102,6 +102,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
      masquerade \
      SnapdragonCamera \
+     OmniStyle \
+     OmniSwitch \
      CosmicOTA
 
 # Stagefright FFMPEG plugin
