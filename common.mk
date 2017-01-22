@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
      SnapdragonCamera \
      OmniStyle \
      OmniSwitch \
-     CosmicOTA
+     CosmicOTA \
+     CosmicWalls
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
