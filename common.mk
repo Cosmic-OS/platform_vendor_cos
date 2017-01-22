@@ -31,10 +31,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
+ifneq ($(EXCLUDE_SUPERSU),true)
 # SuperSU
 PRODUCT_COPY_FILES += \
    vendor/cos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/cos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+endif
 
 # init.d support
 PRODUCT_COPY_FILES += \
