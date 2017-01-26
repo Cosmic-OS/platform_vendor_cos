@@ -104,7 +104,7 @@ PRODUCT_COPY_FILES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      masquerade \
-     SnapdragonCamera \
+     Snap \
      OmniStyle \
      OmniSwitch \
      CosmicOTA \
