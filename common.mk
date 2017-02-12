@@ -92,7 +92,7 @@ PRODUCT_COPY_FILES += \
 # Pixel Launcher
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
-    vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
+    vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/priv-app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
 
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
@@ -105,6 +105,7 @@ PRODUCT_COPY_FILES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      masquerade \
+     LockClock \
      Snap \
      OmniStyle \
      OmniSwitch \
