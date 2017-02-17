@@ -9,6 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
+    ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
