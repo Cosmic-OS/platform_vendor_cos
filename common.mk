@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
+ifeq ($(EXCLUDE_SUPERSU),true)
+export EXCLUDE_SUPERSU
+endif
+
 ifneq ($(EXCLUDE_SUPERSU),true)
 # SuperSU
 PRODUCT_COPY_FILES += \
