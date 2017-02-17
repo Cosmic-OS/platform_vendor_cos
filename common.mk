@@ -38,7 +38,8 @@ ifeq ($(INCLUDE_MAGISK),true)
 EXCLUDE_SUPERSU = true
 export INCLUDE_MAGISK
 PRODUCT_COPY_FILES += \
-   vendor/cos/prebuilt/common/etc/Magisk.zip:system/addon.d/Magisk.zip
+   vendor/cos/prebuilt/common/etc/Magisk.zip:system/addon.d/Magisk.zip \
+   vendor/cos/prebuilt/common/etc/MagiskManager.apk:system/priv-app/MagiskManager/MagiskManager.apk
 endif
 
 ifeq ($(EXCLUDE_SUPERSU),true)
