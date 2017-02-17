@@ -32,6 +32,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
+ifeq ($(INCLUDE_MAGISK),true)
+# Magisk
+EXCLUDE_SUPERSU = true
+export INCLUDE_MAGISK
+PRODUCT_COPY_FILES += \
+   vendor/cos/prebuilt/common/etc/Magisk.zip:system/addon.d/Magisk.zip
+endif
+
 ifeq ($(EXCLUDE_SUPERSU),true)
 export EXCLUDE_SUPERSU
 endif
