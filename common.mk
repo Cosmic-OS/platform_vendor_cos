@@ -118,7 +118,7 @@ PRODUCT_COPY_FILES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-     masquerade \
+     ThemeInterfacer \
      LockClock \
      Snap \
      OmniStyle \
