@@ -99,10 +99,6 @@ PRODUCT_PACKAGES += \
     su \
     Terminal
 
-# Substratum
-PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
-
 # Pixel Launcher
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
