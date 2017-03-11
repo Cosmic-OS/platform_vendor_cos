@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
      Snap \
      OmniStyle \
      OmniSwitch \
+     OmniJaws \
      CosmicOTA \
      CosmicWalls
 
