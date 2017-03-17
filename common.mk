@@ -217,7 +217,7 @@ PRODUCT_BOOT_JARS += \
 
 ifeq ($(COS_RELEASE),true)
     PRODUCT_PROPERTY_OVERRIDES += \
-        persist.ota.romname=$(PRODUCT_NAME) \
+        persist.ota.romname=$(TARGET_PRODUCT) \
         persist.ota.version=$(shell date +%Y%m%d) \
-        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/android_vendor_ota/n7.1/$(PRODUCT_DEVICE).xml
+        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/n7.1/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2).xml
 endif
