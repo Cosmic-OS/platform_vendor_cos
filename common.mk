@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
      OmniStyle \
      OmniSwitch \
      OmniJaws \
-     CosmicOTA \
+     OTAUpdates \
      CosmicWalls
 
 # Stagefright FFMPEG plugin
@@ -214,3 +214,10 @@ PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
+
+ifeq ($(COS_RELEASE),true)
+    PRODUCT_PROPERTY_OVERRIDES += \
+        persist.ota.romname=$(PRODUCT_NAME) \
+        persist.ota.version=$(shell date +%Y%m%d) \
+        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/android_vendor_ota/n7.1/$(PRODUCT_DEVICE).xml
+endif
