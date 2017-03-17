@@ -69,7 +69,6 @@ if [ "$ARCH" != "64" ]; then
 fi
 
 # Set up paths
-cd $(dirname $0)
 DIR_ROOT=$(pwd)
 DIR_OUT=$(readlink $DIR_ROOT/out)
 [ -z "$DIR_OUT" ] && DIR_OUT="$DIR_ROOT/out"
