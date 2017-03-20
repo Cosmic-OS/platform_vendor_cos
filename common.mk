@@ -216,6 +216,16 @@ PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 ifeq ($(COS_RELEASE),true)
+    CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
+    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/n7.1/cos.devices)
+    FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
+    ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
+      IS_OFFICIAL=true
+    endif
+    ifneq ($(IS_OFFICIAL), true)
+       COS_RELEASE=false
+       $(error Device is not official "$(FOUND)")
+    endif
     PRODUCT_PROPERTY_OVERRIDES += \
         persist.ota.romname=$(TARGET_PRODUCT) \
         persist.ota.version=$(shell date +%Y%m%d) \
