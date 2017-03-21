@@ -98,10 +98,16 @@ PRODUCT_PACKAGES += \
     su \
     Terminal
 
-# Pixel Launcher
+
+# Launcher
+ifeq ($(USE_LAUNCHER3),true)
+PRODUCT_PACKAGES += \
+    Launcher3
+else
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
     vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/priv-app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
+endif
 
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
