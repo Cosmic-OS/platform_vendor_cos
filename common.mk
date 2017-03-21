@@ -111,6 +111,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/AmazeFileManager.apk:system/priv-app/AmazeFileManager/AmazeFileManager.apk
 
+# Phonograph
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/Phonograph.apk:system/app/Phonograph/Phonograph.apk
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      ThemeInterfacer \
