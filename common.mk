@@ -32,21 +32,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
-ifeq ($(INCLUDE_MAGISK),true)
 # Magisk
-EXCLUDE_SUPERSU = true
+ifeq ($(INCLUDE_MAGISK),true)
 export INCLUDE_MAGISK
 PRODUCT_COPY_FILES += \
    vendor/cos/prebuilt/common/etc/Magisk.zip:system/addon.d/Magisk.zip \
    vendor/cos/prebuilt/common/etc/MagiskManager.apk:system/priv-app/MagiskManager/MagiskManager.apk
 endif
 
-ifeq ($(EXCLUDE_SUPERSU),true)
-export EXCLUDE_SUPERSU
-endif
-
-ifneq ($(EXCLUDE_SUPERSU),true)
 # SuperSU
+ifeq ($(INCLUDE_SUPERSU),true)
+export INCLUDE_SUPERSU
 PRODUCT_COPY_FILES += \
    vendor/cos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/cos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
