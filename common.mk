@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
 
 # OMS
 PRODUCT_PACKAGES += \
-    masquerade
+    ThemeInterfacer
 
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
