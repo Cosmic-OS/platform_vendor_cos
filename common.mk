@@ -38,6 +38,11 @@ export INCLUDE_MAGISK
 PRODUCT_COPY_FILES += \
    vendor/cos/prebuilt/common/etc/Magisk.zip:system/addon.d/Magisk.zip \
    vendor/cos/prebuilt/common/etc/MagiskManager.apk:system/priv-app/MagiskManager/MagiskManager.apk
+
+# KernelAdiutor
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+
 endif
 
 # SuperSU
@@ -46,6 +51,11 @@ export INCLUDE_SUPERSU
 PRODUCT_COPY_FILES += \
    vendor/cos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/cos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+# KernelAdiutor
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+
 endif
 
 # init.d support
@@ -104,10 +114,6 @@ PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
     vendor/cos/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/priv-app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
 endif
-
-# KernelAdiutor
-PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
 # Amaze File Manager
 PRODUCT_COPY_FILES += \
