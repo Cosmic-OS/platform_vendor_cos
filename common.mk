@@ -190,7 +190,7 @@ endif
 SQUISHER_SCRIPT := vendor/cos/tools/squisher
 
 # COS Versioning
-ANDROID_VERSION = 7.1.1
+ANDROID_VERSION = 7.1.2
 PLATFORM_VERSION_CODENAME = REL
 
 ifndef COS_BUILD_TYPE
@@ -207,7 +207,7 @@ ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
 
-COS_VERSION_NUMBER := 1.4
+COS_VERSION_NUMBER := 1.5
 COS_VER := $(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 
 # Set all versions
@@ -230,7 +230,7 @@ PRODUCT_BOOT_JARS += \
 
 ifeq ($(COS_RELEASE),true)
     CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/n7.1/cos.devices)
+    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/n7.1.2/cos.devices)
     FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
@@ -242,5 +242,5 @@ ifeq ($(COS_RELEASE),true)
     PRODUCT_PROPERTY_OVERRIDES += \
         persist.ota.romname=$(TARGET_PRODUCT) \
         persist.ota.version=$(shell date +%Y%m%d) \
-        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/n7.1/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
+        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/n7.1.2/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
 endif

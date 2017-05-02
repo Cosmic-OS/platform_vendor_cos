@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (C) 2016 Cosmic OS Project
+# Copyright (C) 2016-2017 Cosmic OS Project
 # Copyright (C) 2016 The Android OpenSource Project
 # Copyright (C) 2015 Paranoid Android Project
 #
@@ -44,7 +44,7 @@ sleep 2
         echo -e "${CLR_BLD_BLU}        \/         \/        \/  ${CLR_RST}"
 	    echo -e ""
 	    echo -e "${CLR_BLD_BLU}================================${CLR_RST}"
-	    echo -e "${CLR_BLD_BLU}         Cosmic OS 7.1.1        ${CLR_RST}"
+	    echo -e "${CLR_BLD_BLU}         Cosmic OS 7.1.2        ${CLR_RST}"
 	    echo -e "${CLR_BLD_BLU}================================${CLR_RST}"
 	    echo -e ""
 	
