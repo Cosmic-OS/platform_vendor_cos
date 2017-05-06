@@ -123,6 +123,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/Phonograph.apk:system/app/Phonograph/Phonograph.apk
 
+# Turbo
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/Turbo.apk:system/app/Turbo/Turbo.apk
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
      ThemeInterfacer \
