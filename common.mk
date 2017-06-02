@@ -161,8 +161,12 @@ PRODUCT_GENERIC_PROPERTIES += persist.sys.recovery_update=false
 PRODUCT_COPY_FILES +=  \
     vendor/cos/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
-# include definitions for SDCLANG
-include vendor/cos/sdclang/sdclang.mk
+# Include SDCLANG definitions if it is requested and available
+ifeq ($(HOST_OS),linux)
+    ifneq ($(wildcard vendor/qcom/sdclang-3.8/),)
+        include vendor/cos/sdclang/sdclang.mk
+    endif
+endif
 
 # COS Versioning
 ANDROID_VERSION = 8.1.0
