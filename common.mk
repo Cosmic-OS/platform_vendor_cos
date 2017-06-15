@@ -194,6 +194,12 @@ COS_VER := $(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 COS_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VER)
 COS_MOD_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VER)
 
+#Facelock Props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.facelock.black_timeout=700 \
+    ro.facelock.est_max_time=600 \
+    ro.facelock.rec_timeout=3500 \
+    ro.facelock.det_timeout=2500
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
