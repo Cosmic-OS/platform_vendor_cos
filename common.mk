@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap \
     OTAUpdates \
-    Chromium
+    Chromium \
+    CosmicWalls
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
