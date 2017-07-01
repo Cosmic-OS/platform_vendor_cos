@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/Phonograph.apk:system/app/Phonograph/Phonograph.apk
 
+# AboutCosmic-OS
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/AboutCosmic-OS.apk:system/app/AboutCosmic-OS/AboutCosmic-OS.apk
+
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
 PRODUCT_PACKAGES += \
