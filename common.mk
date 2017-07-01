@@ -128,7 +128,7 @@ PRODUCT_COPY_FILES += \
 
 # AboutCosmic-OS
 PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/app/AboutCosmic-OS.apk:system/app/AboutCosmic-OS/AboutCosmic-OS.apk
+    vendor/cos/prebuilt/common/app/AboutCosmic-OS-release.apk:system/app/AboutCosmic-OS/AboutCosmic-OS-release.apk
 
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
