@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
 
 # Custom packages
 PRODUCT_PACKAGES += \
-    Snap \
+    SnapdragonCamera \
     OTAUpdates \
     Chromium \
     CosmicWalls
