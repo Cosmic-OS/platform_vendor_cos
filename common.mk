@@ -177,6 +177,14 @@ PRODUCT_BOOT_JARS += \
 ANDROID_VERSION = 7.1.2
 PLATFORM_VERSION_CODENAME = REL
 
+ifeq ($(KBUILD_BUILD_USER),Savitar)
+    ifeq ($(KBUILD_BUILD_HOST),Saturn)
+      COS_RELEASE=true
+    endif
+else
+    COS_RELEASE=false
+endif
+
 ifndef COS_BUILD_TYPE
 ifeq ($(COS_RELEASE),true)
     ifeq ($(COS_BIWEEKLY),true)
