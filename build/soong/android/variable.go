@@ -1,5 +1,8 @@
 package android
 type Product_variables struct {
+	Has_legacy_camera_hal1 struct {
+		Cflags []string
+	}
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
@@ -46,6 +49,7 @@ type ProductVariables struct {
 	Device_support_legacy_hwfde  *bool `json:",omitempty"`
 	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 	Java_Source_Overlays *string `json:",omitempty"`
+	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Target_process_sdk_version_override *string `json:",omitempty"`
