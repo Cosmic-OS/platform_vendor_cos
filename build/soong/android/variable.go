@@ -15,6 +15,10 @@ type Product_variables struct {
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
+
+	Uses_media_extensions struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -24,4 +28,5 @@ type ProductVariables struct {
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
+	Uses_media_extensions   *bool `json:",omitempty"`
 }
