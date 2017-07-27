@@ -204,19 +204,12 @@ ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
 
-COS_VERSION_NUMBER := 2.0
+COS_VERSION_NUMBER := 2.1
 COS_VER := $(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 
 # Set all versions
 COS_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VER)
 COS_MOD_VERSION := Cosmic-OS_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VER)
-
-#Facelock Props
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.facelock.black_timeout=700 \
-    ro.facelock.est_max_time=600 \
-    ro.facelock.rec_timeout=3500 \
-    ro.facelock.det_timeout=2500
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
@@ -239,5 +232,12 @@ ifeq ($(COS_RELEASE),true)
         persist.ota.version=$(shell date +%Y%m%d) \
         persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/n-mr2/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
 endif
+
+#Facelock Props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.facelock.black_timeout=700 \
+    ro.facelock.est_max_time=600 \
+    ro.facelock.rec_timeout=3500 \
+    ro.facelock.det_timeout=2500
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
