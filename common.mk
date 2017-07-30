@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/cos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/cos/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
-    vendor/cos/prebuilt/common/bin/whitelist:system/addon.d/whitelist \
+    vendor/cos/prebuilt/common/bin/whitelist:system/addon.d/whitelist
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
