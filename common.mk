@@ -218,7 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(COS_RELEASE),true)
     CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-    LIST = $(shell curl -s https://raw.githubusercontent.com/MakeMeCool/platform_vendor_cos/n-mr2/cos.devices)
+    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/n-mr2/cos.devices)
     FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
