@@ -13,5 +13,8 @@ cosmic_soong:
 	echo '    "Uses_media_extensions": $(if $(filter true,$(TARGET_USES_MEDIA_EXTENSIONS)),true,false),'; \
 	echo '    "BoardUsesQTIHardware":  $(if $(BOARD_USES_QTI_HARDWARE),true,false),'; \
 	echo '    "Libart_img_base": "$(LIBART_IMG_BASE)",'; \
+	echo '    "QTIAudioPath":  "$(call project-path-for,qcom-audio)",'; \
+	echo '    "QTIDisplayPath":  "$(call project-path-for,qcom-display)",'; \
+	echo '    "QTIMediaPath":  "$(call project-path-for,qcom-media)",';  \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
