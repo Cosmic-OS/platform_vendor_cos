@@ -1,6 +1,6 @@
 bootstrap_go_package {
-    name: "soong-cosmic",
-    pkgPath: "cosmic/soong/android",
+    name: "soong-cosmic-android",
+    pkgPath: "cosmic/soong/android_cosmic",
     srcs: [
         "android/variable.go",
     ],
