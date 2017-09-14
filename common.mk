@@ -104,7 +104,6 @@ PRODUCT_PACKAGES += \
 
 # Custom packages
 PRODUCT_PACKAGES += \
-    SnapdragonCamera \
     OTAUpdates \
     Chromium \
     CosmicWalls
@@ -114,30 +113,13 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# OMS
-PRODUCT_PACKAGES += \
-    ThemeInterfacer
-
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
-    SoundRecorder
+    Recorder
 
 # Phonograph
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/Phonograph.apk:system/app/Phonograph/Phonograph.apk
-
-# AboutCosmic-OS
-PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/app/AboutCosmic-OS-release.apk:system/app/AboutCosmic-OS/AboutCosmic-OS-release.apk
-
-# Custom off-mode charger
-ifneq ($(WITH_CM_CHARGER),false)
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    cm_charger_res_images \
-    font_log.png \
-    libhealthd.cm
-endif
 
 # World APN list
 PRODUCT_COPY_FILES += \
@@ -162,19 +144,8 @@ endif
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-# Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
-
-# DUI
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
-
 # COS Versioning
-ANDROID_VERSION = 7.1.2
+ANDROID_VERSION = 8.0.0
 PLATFORM_VERSION_CODENAME = REL
 
 ifeq ($(KBUILD_BUILD_USER),Savitar)
@@ -204,7 +175,7 @@ ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
 
-COS_VERSION_NUMBER := 2.1
+COS_VERSION_NUMBER := 3.0
 COS_VER := $(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 
 # Set all versions
@@ -218,7 +189,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(COS_RELEASE),true)
     CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/n-mr2/cos.devices)
+    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/oreo/cos.devices)
     FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
@@ -230,14 +201,7 @@ ifeq ($(COS_RELEASE),true)
     PRODUCT_PROPERTY_OVERRIDES += \
         persist.ota.romname=$(TARGET_PRODUCT) \
         persist.ota.version=$(shell date +%Y%m%d) \
-        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/n-mr2/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
+        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/oreo/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
 endif
-
-#Facelock Props
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.facelock.black_timeout=700 \
-    ro.facelock.est_max_time=600 \
-    ro.facelock.rec_timeout=3500 \
-    ro.facelock.det_timeout=2500
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
