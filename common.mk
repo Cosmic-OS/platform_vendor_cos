@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Recorder
 
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
