@@ -97,6 +97,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# Fix Google dialer
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
