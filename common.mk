@@ -105,7 +105,6 @@ PRODUCT_PACKAGES += \
 # Custom packages
 PRODUCT_PACKAGES += \
     OTAUpdates \
-    Chromium \
     CosmicWalls
 
 # Include explicitly to work around GMS issues
