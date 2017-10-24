@@ -147,6 +147,10 @@ endif
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
+# Dialer fix
+PRODUCT_COPY_FILES +=  \
+    vendor/cos/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 # COS Versioning
 ANDROID_VERSION = 8.0.0
 PLATFORM_VERSION_CODENAME = REL
