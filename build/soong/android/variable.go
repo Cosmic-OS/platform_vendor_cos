@@ -45,6 +45,10 @@ type Product_variables struct {
 	Qcom_bsp_legacy struct {
 		Cflags []string
 	}
+
+	Qti_flac_decoder struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -66,4 +70,5 @@ type ProductVariables struct {
 	BoardUsesLegacyAlsa  *bool `json:",omitempty"`
 	Cant_reallocate_omx_buffers *bool `json:",omitempty"`
 	Qcom_bsp_legacy         *bool `json:",omitempty"`
+	Qti_flac_decoder        *bool `json:",omitempty"`
 }
