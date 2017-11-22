@@ -178,6 +178,11 @@ else
 endif
 endif
 
+ifeq ($(COS_BETA),true)
+    COS_BUILD_TYPE := BETA
+    PLATFORM_VERSION_CODENAME := BETA
+endif
+
 ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
