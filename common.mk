@@ -105,7 +105,8 @@ PRODUCT_PACKAGES += \
 # Custom packages
 PRODUCT_PACKAGES += \
     OTAUpdates \
-    CosmicWalls
+    CosmicWalls \
+    Galaxy
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
