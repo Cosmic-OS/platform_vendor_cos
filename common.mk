@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
 # Custom packages
 PRODUCT_PACKAGES += \
     OTAUpdates \
+    Phonograph \
     CosmicWalls \
     Galaxy
 
@@ -116,10 +117,6 @@ PRODUCT_PACKAGES += \
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
     Recorder
-
-# Phonograph
-PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/app/Phonograph.apk:system/app/Phonograph/Phonograph.apk
 
 # Turbo
 PRODUCT_PACKAGES += \
