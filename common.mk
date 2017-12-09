@@ -105,8 +105,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OTAUpdates \
     Phonograph \
-    CosmicWalls \
-    Galaxy
+    CosmicWalls
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
@@ -116,10 +115,6 @@ PRODUCT_PACKAGES += \
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
     Recorder
-
-# Turbo
-PRODUCT_PACKAGES += \
-    Turbo
 
 # World APN list
 PRODUCT_COPY_FILES += \
@@ -149,7 +144,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cos/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 # COS Versioning
-ANDROID_VERSION = 8.0.0
+ANDROID_VERSION = 8.1.0
 PLATFORM_VERSION_CODENAME = REL
 
 ifeq ($(KBUILD_BUILD_USER),Savitar)
@@ -184,7 +179,7 @@ ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
 
-COS_VERSION_NUMBER := 3.0.1
+COS_VERSION_NUMBER := 3.0.2
 COS_CODENAME := Chronus
 COS_VER := $(COS_VERSION_NUMBER)-$(COS_CODENAME)-$(COS_BUILD_TYPE)
 
@@ -199,7 +194,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(COS_RELEASE),true)
     CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/oreo/cos.devices)
+    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/oreo-mr1/cos.devices)
     FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
@@ -211,7 +206,7 @@ ifeq ($(COS_RELEASE),true)
     PRODUCT_PROPERTY_OVERRIDES += \
         persist.ota.romname=$(TARGET_PRODUCT) \
         persist.ota.version=$(shell date +%Y%m%d) \
-        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/oreo/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
+        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/oreo-mr1/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
 endif
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
