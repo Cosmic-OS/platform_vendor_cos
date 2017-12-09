@@ -36,8 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Init file
-PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/etc/init.local.rc:root/init.local.rc
+PRODUCT_COPY_FILES += vendor/cos/prebuilt/common/etc/init.cos.rc:root/init.cos.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
