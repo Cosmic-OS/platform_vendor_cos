@@ -160,7 +160,6 @@ else
     COS_RELEASE=false
 endif
 
-ifndef COS_BUILD_TYPE
 ifeq ($(COS_RELEASE),true)
     ifeq ($(COS_BIWEEKLY),true)
       COS_BUILD_TYPE := BIWEEKLY
@@ -172,7 +171,6 @@ ifeq ($(COS_RELEASE),true)
 else
     COS_BUILD_TYPE := UNOFFICIAL
     PLATFORM_VERSION_CODENAME := UNOFFICIAL
-endif
 endif
 
 ifeq ($(COS_BETA),true)
