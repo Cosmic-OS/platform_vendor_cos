@@ -105,7 +105,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OTAUpdates \
     Phonograph \
-    CosmicWalls
+    CosmicWalls \
+    Galaxy
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
