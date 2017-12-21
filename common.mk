@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
 
 # Custom packages
 PRODUCT_PACKAGES += \
+    OmniJaws \
     OTAUpdates \
     Phonograph \
     CosmicWalls \
