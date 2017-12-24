@@ -194,7 +194,8 @@ COS_MOD_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(s
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.cos.version=$(COS_VER) \
-    ro.mod.version=$(COS_VER)
+    ro.mod.version=$(COS_VER) \
+    ro.cos.releasetype=$(COS_BUILD_TYPE)
 
 ifeq ($(COS_RELEASE),true)
     CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
