@@ -109,6 +109,10 @@ PRODUCT_PACKAGES += \
     CosmicWalls \
     Galaxy
 
+# Cosmic-OS App
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/app/Cosmic-OS.apk:system/app/Cosmic-OS/Cosmic-OS.apk
+
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
