@@ -1,0 +1,175 @@
+{
+  "dev": [
+    {
+      "developerName": "Sagar Shah",
+      "github": "http://www.github.com/sagarshah1729",
+      "description": "Founder / Lead Developer",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/sagar.jpg",
+      "bg_color": "#D81B60",
+      "thread": "http://forums.yuplaygod.com/threads/nougat-cosmic-os-v2-0-caf-official-garlic-18-07.49980/",
+      "telegram" : "https://t.me/sagarshah1729"
+    },
+    {
+      "developerName": "Sid Sun",
+      "github": "http://www.github.com/Sid-Sun",
+      "description": "Contributor / Web Developer",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/sidsun.jpeg",
+      "bg_color": "#D81B60",
+      "thread": "null",
+      "telegram" : "https://t.me/SidSun"
+    },
+    {
+      "developerName": "Nico Franke",
+      "github": "http://www.github.com/ZerNico",
+      "description": "Contributor",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/nico_franke.png",
+      "bg_color": "#D81B60",
+      "thread": "null",
+      "telegram" : "https://t.me/NicoFranke"
+    },
+    {
+      "developerName": "Sebastian",
+      "github": "https://github.com/Felvesthe",
+      "description": "Developer | Maintainer / Gemini",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/sebastian.jpg",
+      "bg_color": "#D81B60",
+      "thread": "null",
+      "telegram" : "https://t.me/Dzienny"
+    },
+    {
+      "developerName": "zeromod",
+      "github": "http://www.github.com/zeromod",
+      "description": "Contributor / App developer",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/zeromod.jpg",
+      "bg_color": "#D81B60",
+      "thread": "null",
+      "telegram" : "https://t.me/zeromod"
+    },
+    {
+      "developerName": "Adesh",
+      "github": "http://www.github.com/zeromod",
+      "description": "Maintainer / Onyx",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/adesh.jpg",
+      "bg_color": "#FFB300",
+      "thread": "null",
+      "telegram" : "https://t.me/Adesh15"
+    },
+    {
+      "developerName": "Jackcicci",
+      "github": "http://www.github.com/jackcicci",
+      "description": "Maintainer / Titan",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/jackcicci.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/moto-g-2014/development/rom-cosmic-os-t3576987",
+      "telegram" : "https://t.me/jackcicci"
+    },
+    {
+      "developerName": "Keerten",
+      "github": "http://www.github.com/Keerten",
+      "description": "Maintainer / Athene",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/keerten.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/moto-g4-plus/development/rom-cosmic-os-v2-0-t3632057",
+      "telegram" : "https://t.me/keerten"
+    },
+    {
+      "developerName": "Keertesh",
+      "github": "http://www.github.com/Keerten",
+      "description": "Maintainer / Sanders",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/keertesh.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/moto-g5s-plus/development/rom-cosmic-os-v3-1-universe-t3730716",
+      "telegram" : "https://t.me/keertesh19"
+    },
+    {
+      "developerName": "Klozz Jesus",
+      "github": "https://github.com/klozz",
+      "description": "Maintainer / Land | Addison | Falcon",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/klozz_jesus.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/member.php?u=4403780",
+      "telegram" : "https://t.me/TeamMEX_XDA"
+    },
+    {
+      "developerName": "Luy Nagda",
+      "github": "https://github.com/DevIL2709",
+      "description": "Maintainer / OnePlus2",
+      "image": "null",
+      "bg_color": "#FFB300",
+      "thread": "null",
+      "telegram" : "https://t.me/luynagda"
+    },
+    {
+      "developerName": "Manik Chathli",
+      "github": "http://www.github.com/manikchathli",
+      "description": "Maintainer / Potter",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/manik_chathli.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/g5-plus/development/rom-cosmic-os-v1-5-t3629165",
+      "telegram" : "https://t.me/manikchathli"
+    },
+    {
+      "developerName": "Manolo Rey",
+      "github": "https://github.com/ManoloRey",
+      "description": "Maintainer / Mido",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/manolorey.jpg",
+      "bg_color": "#FFB300",
+      "thread": "null",
+      "telegram" : "https://t.me/manolorey"
+    },
+    {
+      "developerName": "Mayank",
+      "github": "http://www.github.com/mayankbali",
+      "description": "Maintainer / A6000",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/mayank.jpg",
+      "bg_color": "#FFB300",
+      "thread": "null",
+      "telegram" : "https://t.me/Mayank20"
+    },
+    {
+      "developerName": "Mourya",
+      "github": "http://www.github.com/miju12",
+      "description": "Maintainer / Z2 plus",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/mourya.jpg",
+      "bg_color": "#FFB300",
+      "thread": "null",
+      "telegram" : "https://t.me/miju12"
+    },
+    {
+      "developerName": "Prakhar",
+      "github": "http://www.github.com/sagar",
+      "description": "Maintainer / Z00L",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/prakhar.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/zenfone-2-laser/development/rom-cosmicos-t3559397",
+      "telegram" : "https://t.me/milki11"
+    },
+    {
+      "developerName": "Prashant Maheshwari",
+      "github": "https://github.com/Butti15",
+      "description": "Maintainer / Tomato",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/prashant_maheshwari.jpg",
+      "bg_color": "#FFB300",
+      "thread": "http://forums.yuplaygod.com/threads/official-cosmic-os-v2-0-7-1-2-caf-oms-subs-volte-stable-tomato-03-07.49248",
+      "telegram" : "https://t.me/Prashant"
+    },
+    {
+      "developerName": "Rohit Singh Negi",
+      "github": "https://github.com/rocknegi",
+      "description": "Maintainer / Kenzo",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/rocknegi.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/redmi-note-3/development/rom-cosmic-os-v1-1-t3508637",
+      "telegram" : "https://t.me/rocknegi69"
+    },
+    {
+      "developerName": "Zjrdroid",
+      "github": "http://www.github.com/ZJRDroid",
+      "description": "Maintainer / osprey",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/zjrdroid.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/2015-moto-g/development/rom-cosmicos-3-0-chronus-osprey-t3706424",
+      "telegram" : "https://t.me/ZJRDroid"
+    }
+  ]
+}
