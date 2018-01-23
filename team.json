@@ -55,6 +55,15 @@
       "telegram" : "https://t.me/Adesh15"
     },
     {
+      "developerName": "Abhinav Gupta",
+      "github": "http://github.com/abhinavgupta371",
+      "description": "Maintainer / lettuce",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/abhinavgupta.jpg",
+      "bg_color": "#FFB300",
+      "thread": "http://forums.yuplaygod.com/threads/rom-volte-8.1.0_r1-official-cosmic-os-v3.1-universe-lettuce-09-01-2018.50978/",
+      "telegram": "https://t.me/agrd1129"
+    },
+    {
       "developerName": "Jackcicci",
       "github": "http://www.github.com/jackcicci",
       "description": "Maintainer / Titan",
@@ -74,7 +83,7 @@
     },
     {
       "developerName": "Keertesh",
-      "github": "http://www.github.com/Keerten",
+      "github": "http://www.github.com/Keertesh19",
       "description": "Maintainer / Sanders",
       "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/keertesh.jpg",
       "bg_color": "#FFB300",
