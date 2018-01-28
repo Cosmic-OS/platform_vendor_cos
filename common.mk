@@ -99,6 +99,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OTAUpdates \
     CosmicWalls \
+    Retro \
     Galaxy
 
 # Cosmic-OS App
