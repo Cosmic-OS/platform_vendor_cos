@@ -98,7 +98,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniJaws \
     OTAUpdates \
-    Phonograph \
     CosmicWalls \
     Galaxy
 
