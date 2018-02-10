@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 # Custom packages
 PRODUCT_PACKAGES += \
     OmniJaws \
-    OTAUpdates \
     CosmicWalls \
     Retro \
     Galaxy
