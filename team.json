@@ -188,6 +188,15 @@
       "bg_color": "#FFB300",
       "thread": "https://forum.xda-developers.com/2015-moto-g/development/rom-cosmicos-3-0-chronus-osprey-t3706424",
       "telegram" : "https://t.me/ZJRDroid"
-    }
+    },
+    {
+      "developerName": "Mr.Acar",
+      "github": "https://github.com/mracar07/",
+      "description": "Maintainer / Zuk Z2 Pro",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/mracar.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/zuk-z2-pro/development/official-cosmic-os-v3-1-universe-t3734733",
+      "telegram": "https://t.me/mracar"
+    }    
   ]
 }
