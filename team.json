@@ -118,15 +118,6 @@
       "telegram" : "https://t.me/luynagda"
     },
     {
-      "developerName": "Manik Chathli",
-      "github": "http://www.github.com/manikchathli",
-      "description": "Maintainer / Potter",
-      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/manik_chathli.jpg",
-      "bg_color": "#FFB300",
-      "thread": "https://forum.xda-developers.com/g5-plus/development/rom-cosmic-os-v1-5-t3629165",
-      "telegram" : "https://t.me/manikchathli"
-    },
-    {
       "developerName": "Manolo Rey",
       "github": "https://github.com/ManoloRey",
       "description": "Maintainer / Mido",
@@ -179,6 +170,15 @@
       "bg_color": "#FFB300",
       "thread": "https://forum.xda-developers.com/redmi-note-3/development/rom-cosmic-os-v1-1-t3508637",
       "telegram" : "https://t.me/rocknegi69"
+    },
+    {      
+      "developerName": "Sri Sandeep",
+      "github": "http://www.github.com/sandyorton7",
+      "description": "Maintainer / Potter",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/sri_sandeep.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/g5-plus/development/rom-cosmic-os-v1-5-t3629165",
+      "telegram" : "https://t.me/thenewguyhere"
     },
     {
       "developerName": "Zjrdroid",
