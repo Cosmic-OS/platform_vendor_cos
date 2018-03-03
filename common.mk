@@ -1,6 +1,6 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     keyguard.no_require_sim=true \
     ro.com.google.clientidbase=android-google \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -12,11 +12,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.setupwizard.rotation_locked=true
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.build.selinux=1
 
 # Thank you, please drive thru!
-PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
+PRODUCT_GENERIC_PROPERTIES += persist.sys.dun.override=0
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
@@ -155,7 +155,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # by default, do not update the recovery with system updates
-PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
+PRODUCT_GENERIC_PROPERTIES += persist.sys.recovery_update=false
 
 # Dialer fix
 PRODUCT_COPY_FILES +=  \
@@ -203,7 +203,7 @@ COS_VER := $(COS_VERSION_NUMBER)-$(COS_CODENAME)-$(COS_BUILD_TYPE)
 COS_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 COS_MOD_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.cos.version=$(COS_VER) \
     ro.mod.version=$(COS_VER) \
@@ -220,7 +220,7 @@ ifeq ($(COS_RELEASE),true)
        COS_RELEASE=false
        $(error Device is not official "$(FOUND)")
     endif
-    PRODUCT_PROPERTY_OVERRIDES += \
+    PRODUCT_GENERIC_PROPERTIES += \
         persist.ota.romname=$(TARGET_PRODUCT) \
         persist.ota.version=$(shell date +%Y%m%d) \
         persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/oreo-mr1/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
