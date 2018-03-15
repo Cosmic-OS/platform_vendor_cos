@@ -111,6 +111,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker
 
+#Font package
+PRODUCT_PACKAGES += \
+    Custom-Fonts
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
