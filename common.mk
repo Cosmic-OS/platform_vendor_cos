@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Fonts
+PRODUCT_PACKAGES += \
+    DU-Fonts
+
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils

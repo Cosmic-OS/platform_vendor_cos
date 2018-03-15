@@ -19,4 +19,9 @@
     <!-- The duration (in milliseconds) of the activity open/close and fragment open/close animations. -->
     <integer name="config_activityShortDur">75</integer>
     <integer name="config_activityDefaultDur">110</integer>
+
+    <!-- System font packages (overlay in vendor) -->
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.dirtyunicorns.fonts</item>
+    </string-array>
 </resources>
