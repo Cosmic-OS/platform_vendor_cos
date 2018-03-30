@@ -52,6 +52,10 @@ type Product_variables struct {
 	Use_legacy_rescaling struct {
 		Cflags []string
 	}
+	Uses_qti_camera_device struct {
+		Cppflags []string
+		Shared_libs []string
+	}
 }
 
 type ProductVariables struct {
@@ -75,4 +79,5 @@ type ProductVariables struct {
 	Qcom_bsp_legacy         *bool `json:",omitempty"`
 	Qti_flac_decoder        *bool `json:",omitempty"`
 	Use_legacy_rescaling    *bool `json:",omitempty"`
+	Uses_qti_camera_device  *bool `json:",omitempty"`
 }

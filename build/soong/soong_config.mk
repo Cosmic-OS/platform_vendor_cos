@@ -16,6 +16,7 @@ cosmic_soong:
 	echo '    "Qti_flac_decoder":  $(if $(strip $(AUDIO_FEATURE_ENABLED_EXTN_FLAC_DECODER)),true,false),';  \
 	echo '    "Use_legacy_rescaling":  $(if $(strip $(TARGET_OMX_LEGACY_RESCALING)),true,false),';  \
 	echo '    "BoardUsesQTIHardware":  $(if $(BOARD_USES_QTI_HARDWARE),true,false),'; \
+	echo '    "Uses_qti_camera_device": $(if $(filter true,$(TARGET_USES_QTI_CAMERA_DEVICE)),true,false),'; \
 	echo '    "Libart_img_base": "$(LIBART_IMG_BASE)",'; \
 	echo '    "QTIAudioPath":  "$(call project-path-for,qcom-audio)",'; \
 	echo '    "QTIDisplayPath":  "$(call project-path-for,qcom-display)",'; \
