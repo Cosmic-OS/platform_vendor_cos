@@ -56,6 +56,7 @@ function brunch()
 
 function breakfast()
 {
+    print_cosmic_ascii
     target=$1
     local variant=$2
     COS_DEVICES_ONLY="true"
