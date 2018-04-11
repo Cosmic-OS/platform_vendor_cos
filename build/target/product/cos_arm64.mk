@@ -13,6 +13,6 @@
 # limitations under the License.
 
 $(call inherit-product, build/target/product/aosp_arm64.mk)
-$(call inherit-product, vendor/cos/config/common_full_phone.mk)
+$(call inherit-product, vendor/cos/common.mk)
 
 PRODUCT_NAME := cos_arm64
