@@ -77,6 +77,13 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
+# Theme stuffs
+PRODUCT_PACKAGES += \
+    PixelTheme \
+    StockTheme \
+    PixelBaseTheme \
+    StockBaseTheme
+
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
     Recorder
