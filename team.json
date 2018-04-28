@@ -118,6 +118,15 @@
       "telegram" : "https://t.me/luynagda"
     },
     {
+      "developerName": "Maaz Muzammil",
+      "github": "https://github.com/MaazMuzammil",
+      "description": "Maintainer / Jalebi",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/maaz_muzammil.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/yu-yunique/development/rom-cosmic-os-v3-1-universe-t3783446",
+      "telegram" : "https://t.me/Mcube3"
+    },
+    {
       "developerName": "Manolo Rey",
       "github": "https://github.com/ManoloRey",
       "description": "Maintainer / Mido",
