@@ -43,12 +43,12 @@ sleep 2
         echo -e "${CLR_BLD_BLU}        \/         \/        \/  ${CLR_RST}"
 	    echo -e ""
 	    echo -e "${CLR_BLD_BLU}================================${CLR_RST}"
-	    echo -e "${CLR_BLD_BLU}         Cosmic OS 3.0          ${CLR_RST}"
+	    echo -e "${CLR_BLD_BLU}         Cosmic OS 3.1          ${CLR_RST}"
 	    echo -e "${CLR_BLD_BLU}================================${CLR_RST}"
 	    echo -e ""
-	
+
 sleep 2
-	
+
 # Output usage help
 function showHelpAndExit {
         echo -e "${CLR_BLD_BLU}usage: $0 <device> [options]${CLR_RST}"
