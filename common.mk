@@ -54,14 +54,15 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs \
+    7z \
+    awk \
     bash \
+    bzip2 \
+    curl \
+    htop \
+    lib7z \
+    libsepol \
     powertop \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat \
-    mkfs.f2fs \
-    fsck.f2fs \
-    fibmap.f2fs \
     mkfs.ntfs \
     fsck.ntfs \
     mount.ntfs \
@@ -72,6 +73,11 @@ PRODUCT_PACKAGES += \
     strace \
     Terminal \
     WallpaperPicker
+
+# exFAT tools
+PRODUCT_PACKAGES += \
+    fsck.exfat \
+    mkfs.exfat
 
 # Telephony packages
 PRODUCT_PACKAGES += \
