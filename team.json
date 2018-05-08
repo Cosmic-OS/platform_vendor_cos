@@ -224,6 +224,15 @@
       "bg_color": "#FFB300",
       "thread": "https://forum.xda-developers.com/2015-moto-g/development/rom-cosmicos-3-0-chronus-osprey-t3706424",
       "telegram" : "https://t.me/ZJRDroid"
-    }   
+    },
+    {
+      "developerName": "Mr.Ak",
+      "github": "https://github.com/MasterKhatri",
+      "description": "Maintainer / Bacon",
+      "image": "https://github.com/Cosmic-OS/cosmic_members/blob/master/MasterKhatri.jpg",
+      "bg_color": "#FFB300",
+      "thread": "null",
+      "telegram" : "https://t.me/Mr_Akash"
+    }
   ]
 }
