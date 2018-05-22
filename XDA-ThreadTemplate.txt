@@ -1,0 +1,128 @@
+Title - [ROM][8.1.0_r1][OFFICIAL] Cosmic-OS v3.1 - Universe [DEVICE_NAME][DATE]
+
+[CENTER][IMG]https://i.imgur.com/EkBf2sa.png[/img]
+
+[CODE]/*
+ * Your warranty is now void.
+ *
+ * I am not responsible for bricked devices, dead SD cards,
+ * thermonuclear war, or you getting fired because the alarm app failed. Please
+ * do some research if you have any concerns about features included in this ROM
+ * before flashing it! YOU are choosing to make these modifications, and if
+ * you point the finger at me for messing up your device, I will laugh at you.
+ */[/CODE]
+
+[B][SIZE="4"][COLOR="Blue"] Cosmic-OS is a Custom ROM based on Android Open Source Project (AOSP) with additional features, performance and battery life improvements.[/COLOR][/SIZE][/B]
+
+[IMG]http://i.imgur.com/2ixekRa.png[/IMG]
+[HIDE]
+[COLOR="Red"]Based on Android 8.1.0 Release 1[/COLOR]
+
+[COLOR="Blue"]# Recents Screen:[/COLOR]
+- Clear All Recents FAB
+- Immersive Recents - Hide apps from recents
+
+[COLOR="Blue"]# StatusBar:[/COLOR]
+- StatusBar Items 
+- VOLTE Switch
+
+[COLOR="Blue"]# Navigation Bar:[/COLOR]
+- Navigation Bar Tuner
+
+[COLOR="Blue"]# Lockscreen:[/COLOR]
+- Lockscreen Weather 
+- Lockscreen Tuner 
+- Lockscreen Media Art 
+- Lockscreen Charging 
+- Lockscreen Quick Unlock 
+- Lockscreen Pin Scramble
+
+[COLOR="Blue"]# Gestures:[/COLOR]
+- Double Tap to sleep Options for StatusBar, Navigation Bar and Lockscreen 
+- Flashlight Toggle
+
+[COLOR="Blue"]# Notifications:[/COLOR]
+- Incall Vibration Options
+
+[COLOR="Blue"]# Quick Settings:[/COLOR]
+- Smart Pulldown options 
+- QS panel Columns and Rows
+
+[COLOR="Blue"]# Volume Rocker:[/COLOR]
+- Do not Disturb Switch 
+- Volume Rocker Music Controls 
+- Volume Buttons Swap 
+- Volume Rocker Cursor Control 
+- Volume Rocker Wake
+
+[COLOR="Blue"]# Miscellaneous:[/COLOR]
+- Extended Restart 
+- Dashboard Conditions Toggle 
+- Night Mode Options 
+- Battery Usage Alerts 
+- Wakelock Blocker 
+- Alarm Blocker 
+- Wake on Plug 
+- CPU Info Switch 
+
+[COLOR="Blue"]# Featured Stuffs:[/COLOR]
+- Themes Manager 
+- Cosmic-OS Wallpapers 
+- Cosmic-OS App
+- Adaptive Icons
+
+[COLOR="Red"]And many more being added regulary![/COLOR]
+[/HIDE]
+
+[IMG]http://i.imgur.com/BmbVYdG.png[/IMG] 
+[SIZE="4"][B][COLOR="Blue"]Instructions for flashing:[/COLOR][/B][/SIZE] 
+Download ROM and GApps. 
+Copy ROM and GApps to internal storage. 
+Wipe /data, /system and /cache. 
+Flash ROM and GApps (And any mods you use)
+Enjoy :P
+
+[SIZE="4"][B][COLOR="Blue"]Instructions for update:[/COLOR][/B][/SIZE] 
+Download ROM and GApps. 
+Copy ROM and GApps to internal storage. 
+Flash ROM and GApps (And any mods you use)
+
+[COLOR="Red"][B]Note:[/B] First boot and boots after every update can take some time. They may even loop a few times. We do not support custom kernels or mods like MultiROM. If you have an issue, make sure your edits aren't interfering with the issue you're reporting. [/COLOR]
+
+[IMG]http://i.imgur.com/uj1kIuX.png[/IMG]
+
+[SIZE="5"][URL="ENTER DOWNLOAD LINK"]Official Builds[/URL] | [URL="opengapps.org"]GApps[/URL]
+[/SIZE]
+
+[IMG]http://i.imgur.com/80jWNpg.png[/IMG]
+
+[SIZE="5"][URL="Add your Device Tree Source"]Device Tree[/URL] | [URL="Add your Kernel Source here"]Kernel[/URL] | [URL="https://github.com/Cosmic-OS/"]ROM[/URL][/SIZE]
+
+[B][SIZE=6][COLOR=#0000b3][U]Credits[/U][/COLOR][/SIZE][/B] 
+[SIZE=4]
+-[MENTION=5863325]sagarshah1729[/MENTION](Founder/Lead Developer)
+-[MENTION=5842339]Sid_Sun[/MENTION](Contributor)
+-[MENTION=5834335]Agent_fabulous[/MENTION](Contributor)
+- [URL="https://github.com/nitrogen-project"]Nitrogen Project[/URL]
+- [URL="https://github.com/LineageOS"]LineageOS[/URL]
+- [URL="https://github.com/CypherOS"]AOSCP[/URL]
+- [URL="https://github.com/Omnirom"]OmniROM[/URL]
+- [URL="https://github.com/ezio84"]ABC ROM[/URL]
+- [URL="https://github.com/dirtyunicorns"]Dirty Unicorns[/URL]
+- Kabou Zeid for Phonograph
+[/SIZE]
+
+Have a feature request? Don't spam here. Visit our Google Plus community or Telegram group 
+[B]Cosmic-OS Official Website:[/B] 
+[URL="https://cosmic-os.github.io"]Cosmic-OS[/URL] 
+[B]Cosmic-OS Google Plus community:[/B] 
+[URL="https://plus.google.com/communities/116339021564888810193"]G+[/URL]
+[B]Cosmic-OS Official Telegram group:[/B] 
+[URL="https://telegram.me/cosmicosofficial"]Telegram[/URL]
+
+[B][SIZE=6][COLOR=#0000b3][U]Support Us[/U][/COLOR][/SIZE][/B] 
+Hello, Gracious human! if you like our work, you may support us by donating:
+[URL="https://paypal.me/CosmicOS"]Paypal[/URL]
+[URL="https://m.imgur.com/a/jbQYS"]PayTM[/URL]
+
+[/CENTER]
