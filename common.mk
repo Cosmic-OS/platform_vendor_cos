@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SettingsDarkThemeOverlay \
     SystemDarkThemeOverlay \
+    SystemSettingsIconTintOverlay \
     GBoardDarkTheme
 
 # Mms depends on SoundRecorder for recorded audio messages
