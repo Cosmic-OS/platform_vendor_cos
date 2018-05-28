@@ -86,12 +86,14 @@ PRODUCT_PACKAGES += \
     StockBaseTheme \
     StockBaseFixedTheme
 
-# DarkUI Packages
+# Black/DarkUI Packages
 PRODUCT_PACKAGES += \
     SettingsDarkThemeOverlay \
     SystemDarkThemeOverlay \
     SystemSettingsIconTintOverlay \
-    GBoardDarkTheme
+    GBoardDarkTheme \
+    SettingsBlackThemeOverlay \
+    SystemBlackThemeOverlay
 
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
