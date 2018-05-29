@@ -84,7 +84,7 @@ PRODUCT_PACKAGES += \
     PinkTheme \
     PixelBaseTheme \
     StockBaseTheme \
-    StockBaseFixedTheme
+    StockFixedBaseTheme
 
 # Black/DarkUI Packages
 PRODUCT_PACKAGES += \
