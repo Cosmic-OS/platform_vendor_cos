@@ -102,12 +102,12 @@ PRODUCT_PACKAGES += \
 
 # Black/DarkUI Packages
 PRODUCT_PACKAGES += \
-    SettingsDarkThemeOverlay \
-    SystemDarkThemeOverlay \
-    SystemSettingsIconTintOverlay \
     GBoardDarkTheme \
-    SettingsBlackThemeOverlay \
-    SystemBlackThemeOverlay
+    SettingsBlackTheme \
+    SettingsDarkTheme \
+    SystemBlackTheme \
+    SystemDarkTheme \
+    SystemSettingsIconTint
 
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
