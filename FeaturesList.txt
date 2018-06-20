@@ -1,62 +1,52 @@
-Based on Android 8.1.0 Release 1 \n
+Based on Android 8.1.0 Release 1
 
-*Basic Customisations*\n\n
+*Basic Customisations*
 
-# Recents Screen:\n
-- Clear All Recents FAB\n
-- Immersive Recents\n
-- Hide apps from recents\n
-\n
-# StatusBar:\n
-- StatusBar Items\n
-- VOLTE Switch\n
-\n
-# Navigation Bar:\n
-- Navigation Bar Tuner\n
-\n
-# Lockscreen:\n
-- Lockscreen Weather\n
-- Lockscreen Tuner\n
-- Lockscreen Media Art\n
-- Lockscreen Charging\n
-- Lockscreen Quick Unlock\n
-- Lockscreen Pin Scramble\n
-\n
-# Gestures:\n
-- Double Tap to sleep Options for:\n
-  * StatusBar\n
-  * Navigation Bar\n
-  * Lockscreen\n
-- Flashlight Toggle\n
-\n
-# Notifications:\n
-- Incall Vibration Options\n
-\n
-# Quick Settings:\n
-- Smart Pulldown options\n
-- QS panel Columns and Rows\n
-\n
-# Volume Rocker:\n
-- Do not Disturb Switch\n
-- Volume Rocker Music Controls\n
-- Volume Buttons Swap\n
-- Volume Rocker Cursor Control\n
-- Volume Rocker Wake\n
-\n
-# Miscellaneous:\n
-- Extended Restart\n
-- Dashboard Conditions Toggle\n
-- Night Mode Options\n
-- Battery Usage Alerts\n
-- Wakelock Blocker\n
-- Alarm Blocker\n
-- Wake on Plug\n
-- CPU Info Switch\n
-\n
-*Featured Stuffs*\n
-- Themes Manager\n
-- Cosmic-OS Wallpapers\n
-- Cosmic-OS App\n
-- Adaptive Icons\n
-\n
+# Recents Screen:
+- Clear All Recents FAB
+- Immersive Recents
+- Hide apps from recents
+# StatusBar:
+- StatusBar Items
+- VOLTE Switch
+# Navigation Bar:
+- Navigation Bar Tuner
+# Lockscreen:
+- Lockscreen Weather
+- Lockscreen Tuner
+- Lockscreen Media Art
+- Lockscreen Charging
+- Lockscreen Quick Unlock
+- Lockscreen Pin Scramble
+# Gestures:
+- Double Tap to sleep Options for:
+  * StatusBar
+  * Navigation Bar
+  * Lockscreen
+- Flashlight Toggle
+# Notifications:
+- Incall Vibration Options
+# Quick Settings:
+- Smart Pulldown options
+- QS panel Columns and Rows
+# Volume Rocker:
+- Do not Disturb Switch
+- Volume Rocker Music Controls
+- Volume Buttons Swap
+- Volume Rocker Cursor Control
+- Volume Rocker Wake
+# Miscellaneous:
+- Extended Restart
+- Dashboard Conditions Toggle
+- Night Mode Options
+- Battery Usage Alerts
+- Wakelock Blocker
+- Alarm Blocker
+- Wake on Plug
+- CPU Info Switch
+*Featured Stuffs*
+- Themes Manager
+- Cosmic-OS Wallpapers
+- Cosmic-OS App
+- Adaptive Icons
 And last but not the least, the Galaxy to #ExploreTheCosmos !
