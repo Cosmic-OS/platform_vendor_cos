@@ -1,6 +1,6 @@
-Title - [ROM][8.1.0_r1][OFFICIAL] Cosmic-OS v3.1 - Universe [DEVICE_NAME][DATE]
+Title - [ROM][8.1.0_r36][OFFICIAL] Cosmic-OS v3.2 - Pulsar [DEVICE_NAME][DATE]
 
-[CENTER][IMG]https://i.imgur.com/EkBf2sa.png[/img]
+[CENTER][IMG]https://lh3.googleusercontent.com/-4858I6HOPa4/Wyv4Y6g1WUI/AAAAAAAAFQM/ioSgI3U80Ucb7c-fls3ov3UrhSUDfVfqwCJoC/w530-h298-n-rw/Pulsar.png[/IMG]
 
 [CODE]/*
  * Your warranty is now void.
@@ -16,39 +16,64 @@ Title - [ROM][8.1.0_r1][OFFICIAL] Cosmic-OS v3.1 - Universe [DEVICE_NAME][DATE]
 
 [IMG]http://i.imgur.com/2ixekRa.png[/IMG]
 [HIDE]
-[COLOR="Red"]Based on Android 8.1.0 Release 1[/COLOR]
+[COLOR="Red"]Based on Android 8.1.0 Release 36[/COLOR]
 
 [COLOR="Blue"]# Recents Screen:[/COLOR]
 - Clear All Recents FAB
-- Immersive Recents - Hide apps from recents
+- Immersive Recents 
+- Hide apps from recents
+- Recents membar
+- Recents Iconpack
 
 [COLOR="Blue"]# StatusBar:[/COLOR]
 - StatusBar Items 
 - VOLTE Switch
+- Statusbar Clock Settings
+- Carrier Label 
+- Cosmic Logo
+- Statusbar Network Traffic
+- Battery Styles
+- 4G instead of LTE Switch
 
 [COLOR="Blue"]# Navigation Bar:[/COLOR]
 - Navigation Bar Tuner
+- Smartbar
+- Fling Navigation Bar
+- Navbar Pulse
+- Navbar Height/Width adjustment
 
 [COLOR="Blue"]# Lockscreen:[/COLOR]
 - Lockscreen Weather 
-- Lockscreen Tuner 
+- Lockscreen Shortcuts
+- Lockscreen Visualizer
 - Lockscreen Media Art 
-- Lockscreen Charging 
+- Lockscreen Charging Info
 - Lockscreen Quick Unlock 
 - Lockscreen Pin Scramble
 
 [COLOR="Blue"]# Gestures:[/COLOR]
 - Double Tap to sleep Options for StatusBar, Navigation Bar and Lockscreen 
 - Flashlight Toggle
+- Brightness Control
+- Three Finger Gesture for Screenshot
+- Screen Off Power Button Touch toggle
 
 [COLOR="Blue"]# Notifications:[/COLOR]
 - Incall Vibration Options
+- Headsup customisations
+- Notification Ticker
+- Ambient Music Ticker
+- Always on Display Toggle
+- Notifications Light
+- Battery Charging Light
 
 [COLOR="Blue"]# Quick Settings:[/COLOR]
 - Smart Pulldown options 
 - QS panel Columns and Rows
+- Bottom Brightness Slider
+- Brightness Slider related options
 
-[COLOR="Blue"]# Volume Rocker:[/COLOR]
+[COLOR="Blue"]# Buttons:[/COLOR]
 - Do not Disturb Switch 
 - Volume Rocker Music Controls 
 - Volume Buttons Swap 
@@ -64,6 +89,11 @@ Title - [ROM][8.1.0_r1][OFFICIAL] Cosmic-OS v3.1 - Universe [DEVICE_NAME][DATE]
 - Alarm Blocker 
 - Wake on Plug 
 - CPU Info Switch 
+- Font Engine
+- Pixel Navigation Bar
+- Android P Animations toggle
+- Full Substratum Support
+- Customised Pixel Launcher
 
 [COLOR="Blue"]# Featured Stuffs:[/COLOR]
 - Themes Manager 
@@ -114,7 +144,7 @@ Flash ROM and GApps (And any mods you use)
 
 Have a feature request? Don't spam here. Visit our Google Plus community or Telegram group 
 [B]Cosmic-OS Official Website:[/B] 
-[URL="https://cosmic-os.github.io"]Cosmic-OS[/URL] 
+[URL="https://cosmic-os.org"]Cosmic-OS[/URL] 
 [B]Cosmic-OS Google Plus community:[/B] 
 [URL="https://plus.google.com/communities/116339021564888810193"]G+[/URL]
 [B]Cosmic-OS Official Telegram group:[/B] 
