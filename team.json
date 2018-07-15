@@ -243,5 +243,13 @@
       "thread": "null",
       "telegram" : "https://t.me/Mr_Akash"
     }
+    {
+      "developerName": "Ankan",
+      "github": "http://www.github.com/Ankan005",
+      "description": "Maintainer / Rolex | Riva",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/ankan005.jpeg",
+      "bg_color": "#D81B60",
+      "thread": "https://forum.xda-developers.com/redmi-4a/development/rom-cosmic-os-v3-2-pulsar-t3816631",
+      "telegram" : "https://t.me/ankan005"
   ]
 }
