@@ -55,6 +55,15 @@
       "telegram" : "https://t.me/Adesh15"
     },
     {
+      "developerName": "anupritaisno1",
+      "github": "http://github.com/anupritaisno1",
+      "description": "Maintainer / oneplus2 ",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/anupritaisno1.jpg",
+      "bg_color": "#FFB300",
+      "thread": "https://forum.xda-developers.com/oneplus-2/orig-development/rom-cosmic-os-v3-2-pulsar-t3818506",
+      "telegram": "https://t.me/clannad"
+    },
+    {
       "developerName": "Abhinav Gupta",
       "github": "http://github.com/abhinavgupta371",
       "description": "Maintainer / lettuce & Tissot",
@@ -242,7 +251,7 @@
       "bg_color": "#FFB300",
       "thread": "null",
       "telegram" : "https://t.me/Mr_Akash"
-    }
+    },
     {
       "developerName": "Ankan",
       "github": "http://www.github.com/Ankan005",
