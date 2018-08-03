@@ -53,8 +53,6 @@ MSM7K_BOARD_PLATFORMS += msm7k
 QSD8K_BOARD_PLATFORMS := qsd8k
 
 # vars for use by utils
-empty :=
-space := $(empty) $(empty)
 colon := $(empty):$(empty)
 underscore := $(empty)_$(empty)
 
