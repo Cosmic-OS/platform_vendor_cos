@@ -22,7 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
     ro.build.selinux=1 \
-    ro.boot.vendor.overlay.theme=com.cosmic.overlay.base.stockfixed
+#    ro.boot.vendor.overlay.theme=com.cosmic.overlay.base.stockfixed
 
 # LatinIME gesture typing
 ifneq ($(filter tenderloin,$(TARGET_PRODUCT)),)
@@ -53,13 +53,11 @@ PRODUCT_BOOT_JARS += \
 
 # Custom packages
 PRODUCT_PACKAGES += \
-    OmniJaws \
     CosmicWalls \
-    Retro \
-    Galaxy
+    Retro
 
 # Cosmic-OS App
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/app/Cosmic-OS.apk:system/app/Cosmic-OS/Cosmic-OS.apk
 
 # Live Wallpapers
@@ -71,19 +69,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Fonts
-PRODUCT_PACKAGES += \
-    DU-Fonts
-
-# DU Utils Library
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
-
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-
 # Accent and Base packages
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AmberTheme \
     BlueTheme \
     CyanTheme \
@@ -106,7 +93,7 @@ PRODUCT_PACKAGES += \
     YellowTheme
 
 # Black/DarkUI Packages
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     GBoardDarkTheme \
     SettingsBlackTheme \
     SettingsDarkTheme \
@@ -118,16 +105,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Recorder
 
-# Turbo
-PRODUCT_PACKAGES += \
-    Turbo
-
 # Misc packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
     Busybox \
     MusicFX \
-    Terminal
+    Terminal \
+    LatinIME
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
@@ -150,7 +134,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 	vendor/cos/overlay/common
 
 # COS Versioning
-ANDROID_VERSION = 8.1.0
+ANDROID_VERSION = 9.0
 COSMIC_VERSION_CODENAME = REL
 
 ifeq ($(KBUILD_BUILD_USER),Savitar)
@@ -183,8 +167,8 @@ ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
     COS_BUILD_TYPE := $(TARGET_UNOFFICIAL_BUILD_ID)
 endif
 
-COS_VERSION_NUMBER := 3.2
-COS_CODENAME := Pulsar
+COS_VERSION_NUMBER := 4.0
+COS_CODENAME := Corona
 COS_VER := $(COS_VERSION_NUMBER)-$(COS_CODENAME)-$(COS_BUILD_TYPE)
 
 # Set all versions
