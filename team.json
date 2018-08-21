@@ -261,5 +261,17 @@
       "thread": "https://forum.xda-developers.com/redmi-4a/development/rom-cosmic-os-v3-2-pulsar-t3816631",
       "telegram" : "https://t.me/ankan005"
     }
+      {
+      "developerName": "Chaitanaya-Mittal(@Professional_Guider)",
+      "github": "http://www.github.com/Chaitanaya-Mittal",
+      "description": "Maintainer / Lenovo Vibe K5+ (A6020)",
+      "image": "https://raw.githubusercontent.com/Cosmic-OS/cosmic_members/master/professional_guider.jpg",
+      "bg_color": "#FFB300",
+      "thread: "https://forum.xda-developers.com/k5-plus/development/rom-cosmic-os-v3-2-pulsar-t3823677",
+      "telegram" : "https://t.me/Professional_Guider"
+    }
+    
+
   ]
+
 }
