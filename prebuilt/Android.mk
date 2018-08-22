@@ -16,7 +16,7 @@ LOCAL_PATH:=$(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Turbo
-LOCAL_SRC_FILES := common/app/Turbo/Turbo.apk
+LOCAL_SRC_FILES := common/app/Turbo.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
