@@ -22,7 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
     ro.build.selinux=1 \
-#    ro.boot.vendor.overlay.theme=com.cosmic.overlay.base.stockfixed
+    ro.boot.vendor.overlay.theme=com.cosmic.overlay.base.stockfixed
 
 # LatinIME gesture typing
 ifneq ($(filter tenderloin,$(TARGET_PRODUCT)),)
