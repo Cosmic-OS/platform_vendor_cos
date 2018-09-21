@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Accent and Base packages
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     AmberTheme \
     BlueTheme \
     CyanTheme \
@@ -105,13 +105,15 @@ PRODUCT_PACKAGES += \
     YellowTheme
 
 # Black/DarkUI Packages
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     GBoardDarkTheme \
-    SettingsBlackTheme \
     SettingsDarkTheme \
-    SystemBlackTheme \
     SystemDarkTheme \
-    SystemSettingsIconTint
+    SysuiQsDarkTheme
+#    SettingsBlackTheme \
+#    SystemBlackTheme \
+#    SystemSettingsIconTint \
+#    SysuiQsBlackTheme
 
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
