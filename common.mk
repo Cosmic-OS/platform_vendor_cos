@@ -61,7 +61,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     CosmicWalls \
     Retro \
-    MarkupGoogle
+    MarkupGoogle \
+    SettingsIntelligenceGooglePrebuilt
 
 # Turbo
 PRODUCT_PACKAGES += \
