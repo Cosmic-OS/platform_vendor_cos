@@ -179,21 +179,11 @@ else
 endif
 
 ifeq ($(COS_RELEASE),true)
-    ifeq ($(COS_BIWEEKLY),true)
-      COS_BUILD_TYPE := BIWEEKLY
-      COSMIC_VERSION_CODENAME := OFFICIAL
-    else
       COS_BUILD_TYPE := OFFICIAL
       COSMIC_VERSION_CODENAME := OFFICIAL
-    endif
 else
     COS_BUILD_TYPE := UNOFFICIAL
     COSMIC_VERSION_CODENAME := UNOFFICIAL
-endif
-
-ifeq ($(COS_BETA),true)
-    COS_BUILD_TYPE := BETA
-    COSMIC_VERSION_CODENAME := BETA
 endif
 
 ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
@@ -206,29 +196,14 @@ COS_VER := $(COS_VERSION_NUMBER)-$(COS_CODENAME)-$(COS_BUILD_TYPE)
 COS_BUILD_DATE := $(shell date +%Y%m%d)
 
 # Set all versions
-COS_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
-COS_MOD_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(shell date +%Y%m%d)_$(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
+COS_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(COS_BUILD_DATE)_$(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
+COS_MOD_VERSION := Cosmic-OS_$(COS_CODENAME)_$(COS_BUILD)_$(ANDROID_VERSION)_$(COS_BUILD_DATE)_$(COS_VERSION_NUMBER)-$(COS_BUILD_TYPE)
 
-PRODUCT_GENERIC_PROPERTIES += \
-    BUILD_DISPLAY_ID=$(BUILD_ID) \
-    ro.cos.version=$(COS_VER) \
-    ro.mod.version=$(COS_VER) \
-    ro.cos.build_date=$(COS_BUILD_DATE) \
-    ro.cos.releasetype=$(COS_BUILD_TYPE)
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID="$(BUILD_ID)-$(shell whoami)@$(shell hostname)"
 
-ifeq ($(COS_RELEASE),true)
-    CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/pulsar-release/cos.devices)
-    FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
-    ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
-      IS_OFFICIAL=true
-    endif
-    ifneq ($(IS_OFFICIAL), true)
-       COS_RELEASE=false
-       $(error Device is not official "$(FOUND)")
-    endif
-    PRODUCT_GENERIC_PROPERTIES += \
-        persist.ota.romname=$(TARGET_PRODUCT) \
-        persist.ota.version=$(shell date +%Y%m%d) \
-        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cosmic.version=$(COS_VER) \
+    ro.modversion=Cosmic-OS_$(COS_VER) \
+    ro.romstats.url=https://stats.cosmic-os.org \
+    ro.romstats.name=Cosmic-OS \
+    ro.romstats.version=$(COS_VER)
