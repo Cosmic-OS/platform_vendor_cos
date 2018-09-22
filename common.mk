@@ -58,6 +58,7 @@ PRODUCT_BOOT_JARS += \
 # Custom packages
 PRODUCT_PACKAGES += \
     CosmicWalls \
+    Galaxy \
     Retro \
     MarkupGoogle \
     SettingsIntelligenceGooglePrebuilt
