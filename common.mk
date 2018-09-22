@@ -25,8 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.cosmic.overlay.base.stockfixed
 
 # LatinIME gesture typing
-ifneq ($(filter tenderloin,$(TARGET_PRODUCT)),)
-ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter arm64,$(TARGET_ARCH)),)
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/cos/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
@@ -34,7 +33,6 @@ else
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
     vendor/cos/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
-endif
 endif
 
 # Backup Tool
