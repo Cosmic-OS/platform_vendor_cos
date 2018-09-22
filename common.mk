@@ -70,8 +70,12 @@ PRODUCT_PACKAGES += \
 
 # Markup Libs
 PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/cos/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so
+
+ifeq ($(TARGET_GAPPS_ARCH),arm64)
+PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+endif
 
 # Cosmic-OS App
 #PRODUCT_COPY_FILES += \
