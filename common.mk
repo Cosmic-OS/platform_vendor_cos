@@ -151,6 +151,8 @@ PRODUCT_COPY_FILES += \
     vendor/cos/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/cos/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 
+ADDITIONAL_FONTS_FILE := vendor/cos/fonts/google-sans.xml
+
 # Fix Google dialer
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
