@@ -111,7 +111,8 @@ PRODUCT_PACKAGES += \
     StockBaseTheme \
     StockFixedBaseTheme \
     StockTheme \
-    YellowTheme
+    YellowTheme \
+    MintGreenTheme
 
 # Black/DarkUI Packages
 PRODUCT_PACKAGES += \
