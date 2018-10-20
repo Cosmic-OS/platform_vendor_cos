@@ -153,7 +153,14 @@ PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
     vendor/cos/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
-
+# Lawnchair Default Configuration
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    LawnConf
+	
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.cos.overlay.lawnconf
+	
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
