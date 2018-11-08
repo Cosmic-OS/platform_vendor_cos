@@ -119,11 +119,10 @@ PRODUCT_PACKAGES += \
     GBoardDarkTheme \
     SettingsDarkTheme \
     SystemDarkTheme \
-    SysuiQsDarkTheme
-#    SettingsBlackTheme \
-#    SystemBlackTheme \
-#    SystemSettingsIconTint \
-#    SysuiQsBlackTheme
+    SysuiQsDarkTheme \
+    SettingsBlackTheme \
+    SystemBlackTheme \
+    SysuiQsBlackTheme
 
 # QS Accent Packages
 PRODUCT_PACKAGES += \
