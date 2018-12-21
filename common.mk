@@ -125,6 +125,11 @@ PRODUCT_PACKAGES += \
 #    SystemSettingsIconTint \
 #    SysuiQsBlackTheme
 
+# QS Accent Packages
+PRODUCT_PACKAGES += \
+    QsAccentBlack \
+    QsAccentWhite
+
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
     Recorder
