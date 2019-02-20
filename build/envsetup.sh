@@ -402,6 +402,7 @@ function makerecipe() {
 }
 
 function mka() {
+    source $ANDROID_BUILD_TOP/vendor/cos/build/disp_hals_setup.sh
     m -j "$@"
 }
 
