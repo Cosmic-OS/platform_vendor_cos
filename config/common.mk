@@ -114,6 +114,10 @@ PRODUCT_PACKAGES += \
 #Font package
 PRODUCT_PACKAGES += \
     Custom-Fonts
+	
+#Omni package
+PRODUCT_PACKAGES += \
+    OmniStyle 
 
 # Charger
 PRODUCT_PACKAGES += \
