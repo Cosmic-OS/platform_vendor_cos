@@ -43,6 +43,10 @@ endif
 # Ambient Play
 PRODUCT_PACKAGES += \
     AmbientPlayHistoryProvider
+	
+# Substratum Key
+PRODUCT_PACKAGES += \
+    SubstratumSignature
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
