@@ -20,5 +20,5 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.ringtone=The_big_adventure.ogg,The_big_adventure.ogg
 
-# Inherit full common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full.mk)
+# Inherit full common Cosmic-OS stuff
+$(call inherit-product, vendor/cos/config/common_full.mk)

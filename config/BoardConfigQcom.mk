@@ -1,5 +1,5 @@
 # Bring in Qualcomm helper macros
-include vendor/aosp/build/core/qcom_utils.mk
+include vendor/cos/build/core/qcom_utils.mk
 
 B_FAMILY := msm8226 msm8610 msm8974
 B64_FAMILY := msm8992 msm8994
@@ -17,7 +17,7 @@ ifneq ($(call is-board-platform-in-list, $(UM_PLATFORMS)),true)
     TARGET_USES_QCOM_BSP := true
 endif
 
-# Tell HALs that we're compiling an AOSP build with an in-line kernel
+# Tell HALs that we're compiling a COS build with an in-line kernel
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)

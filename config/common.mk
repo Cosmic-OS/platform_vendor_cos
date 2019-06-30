@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= PixelExperience
+PRODUCT_BRAND ?= Cosmic-OS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -46,42 +46,42 @@ PRODUCT_PACKAGES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aosp/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
-    vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/cos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/cos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/cos/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/cos/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
-    vendor/aosp/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/aosp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/cos/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/cos/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/cos/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
 endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/aosp/config/permissions/privapp-permissions-aosp.xml:system/etc/permissions/privapp-permissions-aosp.xml \
-    vendor/aosp/config/permissions/org.lineageos.snap.xml:system/etc/permissions/org.lineageos.snap.xml \
-    vendor/aosp/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+    vendor/cos/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/cos/config/permissions/privapp-permissions-aosp.xml:system/etc/permissions/privapp-permissions-aosp.xml \
+    vendor/cos/config/permissions/org.lineageos.snap.xml:system/etc/permissions/org.lineageos.snap.xml \
+    vendor/cos/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/cos/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/cos/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
 # Copy all custom init rc files
-$(foreach f,$(wildcard vendor/aosp/prebuilt/common/etc/init/*.rc),\
+$(foreach f,$(wildcard vendor/cos/prebuilt/common/etc/init/*.rc),\
     $(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/cos/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -93,7 +93,7 @@ PRODUCT_COPY_FILES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
+    vendor/cos/config/permissions/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
@@ -128,8 +128,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cos/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/cos/overlay/common
 
 # Cutout control overlay
 PRODUCT_PACKAGES += \
@@ -140,10 +140,10 @@ PRODUCT_PACKAGES += \
     SetupWizardOverlay
 
 # Branding
-include vendor/aosp/config/branding.mk
+include vendor/cos/config/branding.mk
 
 # OTA
-include vendor/aosp/config/ota.mk
+include vendor/cos/config/ota.mk
 
 # GApps
 include vendor/gapps/config.mk

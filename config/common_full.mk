@@ -1,4 +1,4 @@
-# Inherit common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit common Cosmic-OS stuff
+$(call inherit-product, vendor/cos/config/common.mk)
 
 PRODUCT_SIZE := full

@@ -1,6 +1,6 @@
 bootstrap_go_package {
-    name: "soong-aosp",
-    pkgPath: "aosp/soong/android",
+    name: "soong-cosmic",
+    pkgPath: "cosmic/soong/android",
     srcs: [
         "android/config.go",
         "android/variable.go",
@@ -9,7 +9,7 @@ bootstrap_go_package {
 
 bootstrap_go_package {
     name: "soong-custom-generator",
-    pkgPath: "aosp/soong/generator",
+    pkgPath: "cosmic/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
