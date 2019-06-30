@@ -109,15 +109,30 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Optional packages
 PRODUCT_PACKAGES += \
+    Calendar \
+    Camera2 \
+    Contacts \
+    DeskClock \
+    Dialer \
+    ExactCalculator \
+    Gallery2 \
+    LatinIME \
+    messaging \
+    Recorder \
     LiveWallpapersPicker
 
-#Font package
+# Cosmic-OS Packages
+PRODUCT_PACKAGES += \
+    CosmicWalls \
+    Galaxy
+
+# Font package
 PRODUCT_PACKAGES += \
     Custom-Fonts
-	
-#Omni package
+
+# Omni package
 PRODUCT_PACKAGES += \
-    OmniStyle 
+    OmniStyle
 
 # Charger
 PRODUCT_PACKAGES += \
