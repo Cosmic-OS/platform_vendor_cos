@@ -187,9 +187,6 @@ include vendor/cos/config/branding.mk
 # OTA
 include vendor/cos/config/ota.mk
 
-# GApps
-include vendor/gapps/config.mk
-
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
