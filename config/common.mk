@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     messaging \
     Recorder \
+    RetroMusicPlayer \
     LiveWallpapersPicker
 
 # Cosmic-OS Packages

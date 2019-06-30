@@ -1,4 +1,6 @@
-#Substratum
+LOCAL_PATH:= $(call my-dir)
+
+# Substratum
 include $(CLEAR_VARS)
 LOCAL_MODULE := SubstratumSignature
 LOCAL_MODULE_TAGS := optional
