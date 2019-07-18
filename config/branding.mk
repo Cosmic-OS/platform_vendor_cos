@@ -1,5 +1,9 @@
 # Set all versions
-COSMIC_BUILD_TYPE ?= UNOFFICIAL
+ifeq ($(COS_RELEASE),true)
+COSMIC_BUILD_TYPE := OFFICIAL
+else
+COSMIC_BUILD_TYPE := UNOFFICIAL
+endif
 
 COSMIC_DATE_YEAR := $(shell date -u +%Y)
 COSMIC_DATE_MONTH := $(shell date -u +%m)
