@@ -7,9 +7,8 @@ else
 COSMIC_OTA_VERSION_CODE := pie
 endif
 
-COSMIC_PROPERTIES += \
-    ro.cos.ota.version_code=$(COSMIC_OTA_VERSION_CODE) \
-    sys.ota.disable_uncrypt=1
+CUSTOM_PROPERTIES += \
+    ro.cos.ota.version_code=$(COSMIC_OTA_VERSION_CODE)
 
 PRODUCT_PACKAGES += \
     Updates
