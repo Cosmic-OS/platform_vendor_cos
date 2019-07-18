@@ -43,7 +43,7 @@ endif
 # Ambient Play
 PRODUCT_PACKAGES += \
     AmbientPlayHistoryProvider
-	
+
 # Substratum Key
 PRODUCT_PACKAGES += \
     SubstratumSignature
@@ -158,10 +158,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Lawnchair \
     LawnConf
-	
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.cos.overlay.lawnconf
-	
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
