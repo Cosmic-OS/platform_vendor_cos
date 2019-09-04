@@ -5,3 +5,6 @@ include vendor/cos/config/BoardConfigQcom.mk
 endif
 
 include vendor/cos/config/BoardConfigSoong.mk
+
+PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
+
