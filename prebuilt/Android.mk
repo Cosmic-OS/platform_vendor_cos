@@ -1,16 +1,5 @@
 LOCAL_PATH:=$(call my-dir)
 
-# Lawnchair
-include $(CLEAR_VARS)
-LOCAL_MODULE := Lawnchair
-LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
 # Retro Music Player
 include $(CLEAR_VARS)
 LOCAL_MODULE := RetroMusicPlayer
@@ -18,17 +7,6 @@ LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-# SubstratumSignature
-include $(CLEAR_VARS)
-LOCAL_MODULE := SubstratumSignature
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 

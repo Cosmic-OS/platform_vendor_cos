@@ -44,14 +44,6 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Ambient Play
-PRODUCT_PACKAGES += \
-    AmbientPlayHistoryProvider
-
-# Substratum Key
-PRODUCT_PACKAGES += \
-    SubstratumSignature
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -121,23 +113,15 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Gallery2 \
     LatinIME \
+    Launcher3 \
     messaging \
     Recorder \
     RetroMusicPlayer \
     LiveWallpapersPicker
 
 # Cosmic-OS Packages
-PRODUCT_PACKAGES += \
-    CosmicWalls \
-    Galaxy
-
-# Font package
-PRODUCT_PACKAGES += \
-    Custom-Fonts
-
-# Omni package
-PRODUCT_PACKAGES += \
-    OmniStyle
+# PRODUCT_PACKAGES += \
+    CosmicWalls
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -152,19 +136,6 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
-# Lawnchair
-PRODUCT_COPY_FILES += \
-    vendor/cos/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
-    vendor/cos/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
-
-# Lawnchair Default Configuration
-PRODUCT_PACKAGES += \
-    Lawnchair \
-    LawnConf
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.cos.overlay.lawnconf
-
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
@@ -173,27 +144,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cos/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/cos/overlay/common
-
-# Cutout control overlay
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-
-# SetupWizard overlay
-PRODUCT_PACKAGES += \
-    SetupWizardOverlay
 
 # Branding
 include vendor/cos/config/branding.mk
 
 # OTA
 include vendor/cos/config/ota.mk
-
-# Pixel Style
-include vendor/pixelstyle/config.mk
-
-# Themes
-include vendor/themes/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
