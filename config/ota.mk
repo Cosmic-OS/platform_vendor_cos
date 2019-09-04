@@ -1,16 +1,20 @@
-ifeq ($(COS_RELEASE),true)
-    CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-    LIST = $(shell curl -s https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_cos/corona-release/cos.devices)
-    FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
-    ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
-      IS_OFFICIAL=true
-    endif
-    ifneq ($(IS_OFFICIAL), true)
-       COS_RELEASE=false
-       $(error Device is not official "$(FOUND)")
-    endif
-    PRODUCT_GENERIC_PROPERTIES += \
-        persist.ota.romname=$(TARGET_PRODUCT) \
-        persist.ota.version=$(shell date +%Y%m%d) \
-        persist.ota.manifest=https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/corona-release/$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3).xml
+ifneq ($(IS_GENERIC_SYSTEM_IMAGE), true)
+ifeq ($(COSMIC_BUILD_TYPE), OFFICIAL)
+
+ifeq ($(IS_GO_VERSION), true)
+COSMIC_OTA_VERSION_CODE := pie_go
+else
+COSMIC_OTA_VERSION_CODE := pie
+endif
+
+CUSTOM_PROPERTIES += \
+    ro.cos.ota.version_code=$(COSMIC_OTA_VERSION_CODE)
+
+PRODUCT_PACKAGES += \
+    Updates
+
+PRODUCT_COPY_FILES += \
+    vendor/cos/config/permissions/ro.cos.ota.xml:system/etc/permissions/ro.cos.ota.xml
+
+endif
 endif
