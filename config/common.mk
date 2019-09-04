@@ -103,6 +103,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Use Cosmic's bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Optional packages
 PRODUCT_PACKAGES += \
     Calendar \
