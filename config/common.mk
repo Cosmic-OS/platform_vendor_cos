@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SetupWizardOverlay
 
+# Long screenshot
+PRODUCT_PACKAGES += \
+    Longshot
+
 # Branding
 include vendor/cos/config/branding.mk
 
