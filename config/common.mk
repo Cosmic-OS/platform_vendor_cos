@@ -76,7 +76,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 include vendor/cos/config/fonts.mk
 
 # Gapps
-$(call inherit-product, vendor/cos/config/gapps.mk)
+ifeq ($(USE_GAPPS),true)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+endif
 
 # Include AOSP audio files
 include vendor/cos/config/aosp_audio.mk
@@ -104,7 +106,8 @@ PRODUCT_COPY_FILES += \
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
+    SimpleDeviceConfig \
+    SettingsIntelligenceGooglePrebuilt
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -113,6 +116,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/cos/config/permissions/privapp-permissions-cos-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-cos.xml
 
 # Root
 PRODUCT_PACKAGES += \
