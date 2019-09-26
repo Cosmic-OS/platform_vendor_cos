@@ -1,0 +1,36 @@
+[
+  {
+    "oem": "Xiaomi",
+    "devices": [
+      {
+        "codename": "",
+        "model": "",
+        "url": "",
+        "maintainer": ""
+      },
+      {
+        "codename": "",
+        "model": "",
+        "url": "",
+        "maintainer": ""
+      }
+    ]
+  },
+  {
+    "oem": "Asus",
+    "devices": [
+      {
+        "codename": "",
+        "model": "",
+        "url": "",
+        "maintainer": ""
+      },
+      {
+        "codename": "",
+        "model": "",
+        "url": "",
+        "maintainer": ""
+      }
+    ]
+  }
+]
