@@ -99,6 +99,11 @@ PRODUCT_COPY_FILES += \
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/cos/prebuilt/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+	vendor/cos/prebuilt/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
