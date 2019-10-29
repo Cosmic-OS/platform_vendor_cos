@@ -1,32 +1,59 @@
-# Set all versions
-ifeq ($(COS_RELEASE),true)
-COSMIC_BUILD_TYPE := OFFICIAL
-else
-COSMIC_BUILD_TYPE := UNOFFICIAL
+#
+# Copyright 2017-2019 Cosmic-OS
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#
+# Handle various build version information.
+#
+# Guarantees that the following are defined:
+#     COSMIC_VERSION
+#     COSMIC_VERSION_CODE
+#     COSMIC_BUILD_TYPE
+#
+
+ifndef COSMIC_VERSION
+  # This is the global cosmic version that determines our releases
+  # in various types. The types are defined as Major, Minor, and Maintenance.
+  # Example of this syntax:
+  # Major: The first number indicates a major system upgrade
+  # Minor: The second number indicates a minor system upgrade which
+  #        may include system pacthes for improvements and small new features.
+  # Maintenance: The third number indicates a maintenance system upgrade with
+  #              small, but effective improvements throughout the system.
+  COSMIC_VERSION := 5.0
 endif
 
-COSMIC_DATE_YEAR := $(shell date -u +%Y)
-COSMIC_DATE_MONTH := $(shell date -u +%m)
-COSMIC_DATE_DAY := $(shell date -u +%d)
-COSMIC_DATE_HOUR := $(shell date -u +%H)
-COSMIC_DATE_MINUTE := $(shell date -u +%M)
-COSMIC_VERSION_NUMBER := 5.0-Quasars
-COSMIC_BUILD_DATE_UTC := $(shell date -d '$(COSMIC_DATE_YEAR)-$(COSMIC_DATE_MONTH)-$(COSMIC_DATE_DAY) $(COSMIC_DATE_HOUR):$(COSMIC_DATE_MINUTE) UTC' +%s)
-COSMIC_BUILD_DATE := $(COSMIC_DATE_YEAR)$(COSMIC_DATE_MONTH)$(COSMIC_DATE_DAY)-$(COSMIC_DATE_HOUR)$(COSMIC_DATE_MINUTE)
+ifndef COSMIC_VERSION_CODE
+  # As part of the cosmic platform, each Major system upgrade is released
+  # under a specific codename. The indicates which codename for which
+  # major system upgrade under the cosmic platform.
+  COSMIC_VERSION_CODE := Quasar
+endif
 
-COSMIC_PLATFORM_VERSION := 9.0
+ifndef COSMIC_BUILD_TYPE
+  # We build unofficial by default
+  COSMIC_BUILD_TYPE := UNOFFICIAL
+endif
 
-TARGET_PRODUCT_SHORT := $(subst cos_,,$(COSMIC_BUILD))
+# Output target zip name
+COSMIC_TARGET_ZIP := Cosmic-OS-v$(COSMIC_VERSION)-$(COSMIC_VERSION_CODE)-$(COSMIC_BUILD)-$(shell date -u +%Y%m%d-%H%M)-$(COSMIC_BUILD_TYPE).zip
 
-COSMIC_VERSION := Cosmic-OS-v$(COSMIC_VERSION_NUMBER)-$(COSMIC_BUILD)-$(COSMIC_BUILD_DATE)-$(COSMIC_BUILD_TYPE)
-COSMIC_VERSION_PROP := $(COSMIC_VERSION_NUMBER)-$(COSMIC_BUILD_TYPE)
-ROM_FINGERPRINT := Cosmic-OS/v$(COSMIC_VERSION_NUMBER)/$(TARGET_PRODUCT_SHORT)/$(COSMIC_BUILD_DATE)
-MODVERSION := Cosmic-OS-v$(COSMIC_VERSION_NUMBER)-$(COSMIC_BUILD)-$(COSMIC_BUILD_DATE)
-
-CUSTOM_PROPERTIES := \
-    ro.modversion==$(MODVERSION) \
-    ro.cos.version=$(COSMIC_VERSION_PROP) \
-    ro.cos.build_date=$(COSMIC_BUILD_DATE) \
-    ro.cos.build_date_utc=$(COSMIC_BUILD_DATE_UTC) \
-    ro.cos.build_type=$(COSMIC_BUILD_TYPE) \
-    ro.cos.fingerprint=$(ROM_FINGERPRINT)
+# Branding Props
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.modversion=$(COSMIC_VERSION)-$(shell date -u +%Y%m%d) \
+    ro.cos.version=$(COSMIC_VERSION) \
+    ro.cos.version_code=$(COSMIC_VERSION_CODE) \
+    ro.cos.device=$(COSMIC_BUILD) \
+    ro.cos.releasetype=$(COSMIC_BUILD_TYPE) \
+    ro.cos.builddate=$(shell date -u +%Y%m%d)
