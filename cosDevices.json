@@ -3,33 +3,10 @@
     "oem": "Xiaomi",
     "devices": [
       {
-        "codename": "",
-        "model": "",
-        "url": "",
-        "maintainer": ""
-      },
-      {
-        "codename": "",
-        "model": "",
-        "url": "",
-        "maintainer": ""
-      }
-    ]
-  },
-  {
-    "oem": "Asus",
-    "devices": [
-      {
-        "codename": "",
-        "model": "",
-        "url": "",
-        "maintainer": ""
-      },
-      {
-        "codename": "",
-        "model": "",
-        "url": "",
-        "maintainer": ""
+        "codename": "Raphael",
+        "model": "Redmi K20 Pro",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/",
+        "maintainer": "Sagar Shah"
       }
     ]
   }
