@@ -1,0 +1,13 @@
+[
+  {
+    "oem": "Xiaomi",
+    "devices": [
+      {
+        "codename": "Raphael",
+        "model": "Redmi K20 Pro",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/",
+        "maintainer": "Sagar Shah"
+      }
+    ]
+  }
+]
