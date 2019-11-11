@@ -50,7 +50,7 @@ endif
 COSMIC_TARGET_ZIP := Cosmic-OS-v$(COSMIC_VERSION)-$(COSMIC_VERSION_CODE)-$(COSMIC_BUILD)-$(shell date -u +%Y%m%d-%H%M)-$(COSMIC_BUILD_TYPE).zip
 
 # Branding Props
-ADDITIONAL_BUILD_PROPERTIES += \
+CUSTOM_PROPERTIES += \
     ro.modversion=$(COSMIC_VERSION)-$(shell date -u +%Y%m%d) \
     ro.cos.version=$(COSMIC_VERSION) \
     ro.cos.version_code=$(COSMIC_VERSION_CODE) \
