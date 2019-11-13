@@ -29,6 +29,12 @@
         "model": "OnePlus 7 Pro",
         "url": "https://sourceforge.net/projects/cosmic-os/files/guacamole/",
         "maintainer": "Clannad"
+      },
+      {
+        "codename": "fajita",
+        "model": "OnePlus 6T",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/fajita/",
+        "maintainer": "Dell Schulz"
       }
     ]
   },
@@ -48,12 +54,6 @@
         "maintainer": "Abhinav Gupta"
       },
       {
-        "codename": "tissot",
-        "model": "Mi A1",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/tissot/",
-        "maintainer": "Abhinav Gupta"
-      },
-      {
         "codename": "rolex",
         "model": "Redmi 4A",
         "url": "https://sourceforge.net/projects/cosmic-os/files/rolex/",
@@ -64,6 +64,23 @@
         "model": "Poco F1",
         "url": "https://sourceforge.net/projects/cosmic-os/files/beryllium/",
         "maintainer": "Abhijith S Varma"
+      },
+      {
+        "codename": "raphael",
+        "model": "Redmi K20 Pro",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/",
+        "maintainer": "Sagar Shah"
+      }
+    ]
+  },
+  {
+    "oem": "YU",
+    "devices": [
+      {
+        "codename": "garlic",
+        "model": "Yureka Black",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/garlic/",
+        "maintainer": "Sagar Shah"
       }
     ]
   }
