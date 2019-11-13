@@ -1,243 +1,69 @@
 [
-  {
-    "oem": "Google",
+ {
+    "oem": "Asus",
     "devices": [
       {
-        "codename": "Marlin",
-        "model": "Pixel XL",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/marlin/",
-        "maintainer": "Joe Pacino"
-      }
-      {
-        "codename": "Bullhead",
-        "model": "Nexus 5X",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/bullhead/",
-        "maintainer": "Arguar"
+        "codename": "X00T",
+        "model": "Asus Zenfone Max Pro M1",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/X00T/",
+        "maintainer": "Shivam Jha"
       }
     ]
-  }
-  {
-    "oem": "Honor/Huawei",
-    "devices": [
-      {
-        "codename": "Berkeley",
-        "model": "Honor View 10",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/berkeley/",
-        "maintainer": "Sagar Shah"
-      }
-    ]
-  }
-  {
-    "oem": "Lenovo",
-    "devices": [
-      {
-        "codename": "A6020",
-        "model": "Lenovo Vibe K5/K5+",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/a6020/",
-        "maintainer": "Chaitanaya Mittal"
-      }
-      {
-        "codename": "Kuntao",
-        "model": "Lenovo P2",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/kuntao/",
-        "maintainer": "Priyesh"
-      }
-    ]
-  }
+  },
   {
     "oem": "Motorola",
     "devices": [
       {
-        "codename": "Potter",
-        "model": "Moto G5 Plus",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/potter/",
-        "maintainer": "Sri Sandeep"
-      }
-      {
-        "codename": "Falcon",
-        "model": "Moto G",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/falcon/",
-        "maintainer": "Klozz Jesus"
-      }
-      {
-        "codename": "Titan",
-        "model": "Moto G2",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/titan/",
-        "maintainer": "Jackcicci"
-      }
-      {
-        "codename": "Sanders",
-        "model": "Moto G5S Plus",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/sanders/",
-        "maintainer": "Keertesh"
-      }
-      {
-        "codename": "Addison",
-        "model": "Moto Z Play",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/addison/",
-        "maintainer": "Klozz Jesus"
+        "codename": "sanders",
+        "model": "Moto G (5S) Plus",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/X00T/",
+        "maintainer": "Jorge Lucas"
       }
     ]
-  }
+  },
   {
     "oem": "Oneplus",
     "devices": [
       {
-        "codename": "Bacon",
-        "model": "OnePlus One",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/bacon/",
-        "maintainer": "Kshitij Gupta"
-      }
-      {
-        "codename": "OnePlus 2",
-        "model": "OnePlus 2",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/oneplus2/",
+        "codename": "guacamole",
+        "model": "OnePlus 7 Pro",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/guacamole/",
         "maintainer": "Clannad"
       }
-      {
-        "codename": "Oneplus3",
-        "model": "OnePlus 3/3T",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/oneplus3/",
-        "maintainer": "Sagar Shah"
-      }
-      {
-        "codename": "Dumpling",
-        "model": "OnePlus 5",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/dumpling/",
-        "maintainer": "Sebestian"
-      }
     ]
-  }
-  {
-    "oem": "Samsung",
-    "devices": [
-      {
-        "codename": "J7velte",
-        "model": "Samsung Galaxy J7 NXT",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/j7velte/",
-        "maintainer": "Shivam Jha"
-      }
-    ]
-  }
-  {
-    "oem": "Sony",
-    "devices": [
-      {
-        "codename": "Huashan",
-        "model": "Sony Xperia SP",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/huashan/",
-        "maintainer": "HenTaku"
-      }
-    ]
-  }
+  },
   {
     "oem": "Xiaomi",
     "devices": [
       {
-        "codename": "Raphael",
-        "model": "Xiaomi Redmi K20 Pro",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/",
-        "maintainer": "Sagar Shah"
-      }
-      {
-        "codename": "Whyred",
-        "model": "Xiaomi Redmi Note 5",
+        "codename": "whyred",
+        "model": "Redmi Note 5 Pro",
         "url": "https://sourceforge.net/projects/cosmic-os/files/whyred/",
-        "maintainer": "Ritesh Majumdar"
-      }
+        "maintainer": "Ritzz Majumdar"
+      },
       {
-        "codename": "Gemini",
-        "model": "Mi 5",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/gemini/",
-        "maintainer": "Sebestian"
-      }
-      {
-        "codename": "Tissot",
+        "codename": "tissot",
         "model": "Mi A1",
         "url": "https://sourceforge.net/projects/cosmic-os/files/tissot/",
         "maintainer": "Abhinav Gupta"
-      }
+      },
       {
-        "codename": "Santoni",
-        "model": "Redmi 4/4x",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/santoni/",
-        "maintainer": "Hars Navdhare"
-      }
+        "codename": "tissot",
+        "model": "Mi A1",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/tissot/",
+        "maintainer": "Abhinav Gupta"
+      },
       {
-        "codename": "Riva",
+        "codename": "rolex",
         "model": "Redmi 4A",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/riva/",
-        "maintainer": "Ankan Ghosh"
-      }
-      {
-        "codename": "Rolex",
-        "model": "Redmi 5A",
         "url": "https://sourceforge.net/projects/cosmic-os/files/rolex/",
         "maintainer": "Ankan Ghosh"
-      }
+      },
       {
-        "codename": "Wt88047 ",
-        "model": "Redmi 2",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/wt88047 /",
-        "maintainer": "Ayush Dubey"
-      }
-      {
-        "codename": "Land",
-        "model": "Redmi 3s",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/land/",
-        "maintainer": "Klozz Jesus"
-      }
-      {
-        "codename": "Kenzo",
-        "model": "Redmi Note 3",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/kenzo/",
-        "maintainer": "Rocknegi"
-      }
-      {
-        "codename": "Mido",
-        "model": "Redmi Note 4",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/mido/",
-        "maintainer": "ManoloRey"
-      }
-    ]
-  }
-  {
-    "oem": "Yu",
-    "devices": [
-      {
-        "codename": "Garlic",
-        "model": "YU Yureka Black",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/garlic/",
-        "maintainer": "Sagar Shah"
-      }
-      {
-        "codename": "Lettuce",
-        "model": "YU Yuphoria",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/lettuce/",
-        "maintainer": "Abhinav Gupta"
-      }
-      {
-        "codename": "Jalebi",
-        "model": "YU Yunique",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/jalebi/",
-        "maintainer": "Unknown"
-      }
-    ]
-  }
-  {
-    "oem": "Zuk",
-    "devices": [
-      {
-        "codename": "Z2_plus",
-        "model": "Zuk Z2 Plus",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/z2_plus/",
-        "maintainer": "Mourya"
-      }
-      {
-        "codename": "Z2_row",
-        "model": "Zuk Z2 Pro",
-        "url": "https://sourceforge.net/projects/cosmic-os/files/z2_row/",
-        "maintainer": "Mracar"
+        "codename": "beryllium",
+        "model": "Poco F1",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/beryllium/",
+        "maintainer": "Abhijith S Varma"
       }
     ]
   }
