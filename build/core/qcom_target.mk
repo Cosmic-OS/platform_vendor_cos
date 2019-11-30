@@ -31,7 +31,7 @@ ifneq ($(call is-board-platform-in-list, $(UM_PLATFORMS)),true)
 endif
 
 # Flags for legacy SOCs
-ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(PRODUCT_BOARD_PLATFORM)),)
     TARGET_USES_QCOM_BSP_LEGACY := true
     # Enable legacy audio functions
     ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
@@ -40,7 +40,7 @@ ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)
 endif
 
 # Enable color metadata for every UM platform
-ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(UM_PLATFORMS),$(PRODUCT_BOARD_PLATFORM)),)
     TARGET_USES_COLOR_METADATA := true
 endif
 
@@ -58,38 +58,38 @@ ifeq ($(call is-board-platform-in-list, $(UM_4_9_FAMILY) $(UM_4_14_FAMILY)),true
 endif
 
 # Set QCOM_HARDWARE_VARIANT
-ifneq ($(filter $(B_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(B_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(B_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8974
-else ifneq ($(filter $(B64_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifneq ($(filter $(B64_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(B64_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8994
-else ifneq ($(filter $(BR_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifneq ($(filter $(BR_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(BR_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8916
-else ifneq ($(filter $(UM_3_18_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifneq ($(filter $(UM_3_18_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_3_18_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8996
     TARGET_USES_QCOM_UM_FAMILY := true
     TARGET_USES_QCOM_UM_3_18_FAMILY := true
-else ifneq ($(filter $(UM_4_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifneq ($(filter $(UM_4_4_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_4_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8998
     TARGET_USES_QCOM_UM_FAMILY := true
     TARGET_USES_QCOM_UM_4_4_FAMILY := true
-else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifneq ($(filter $(UM_4_9_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm845
     TARGET_USES_QCOM_UM_FAMILY := true
     TARGET_USES_QCOM_UM_4_9_FAMILY := true
-else ifneq ($(filter $(UM_4_14_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifneq ($(filter $(UM_4_14_FAMILY),$(PRODUCT_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_14_FAMILY)
     QCOM_HARDWARE_VARIANT := sm8150
     TARGET_USES_QCOM_UM_FAMILY := true
     TARGET_USES_QCOM_UM_4_14_FAMILY := true
 else
-    MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
-    QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
+    MSM_VIDC_TARGET_LIST := $(PRODUCT_BOARD_PLATFORM)
+    QCOM_HARDWARE_VARIANT := $(PRODUCT_BOARD_PLATFORM)
 endif
 
 # Set soong namespaces
