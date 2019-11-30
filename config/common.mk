@@ -2,6 +2,8 @@ PRODUCT_BRAND ?= Cosmic-OS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+include device/qcom/common/common.mk
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
@@ -39,6 +41,9 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
+
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -136,9 +141,34 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
+# Bluetooth Audio (A2DP)
+PRODUCT_PACKAGES += libbthost_if
+
+# Include explicitly to work around GMS issues
+PRODUCT_PACKAGES += libprotobuf-cpp-full
+
+# RCS Service
+PRODUCT_PACKAGES += \
+    rcscommon \
+    rcscommon.xml \
+    rcsservice \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_aidl_static \
+    rcs_service_api \
+    rcs_service_api.xml
+
+# MSIM manual provisioning
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
+
+# TCP Connection Management
+PRODUCT_PACKAGES += tcmiface
+PRODUCT_BOOT_JARS += tcmiface
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.storage_manager.enabled=true
+ro.storage_manager.enabled=true
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
