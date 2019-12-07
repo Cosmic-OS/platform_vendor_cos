@@ -124,8 +124,9 @@ PRODUCT_PACKAGES += \
 
 # Cosmic-OS Packages
 PRODUCT_PACKAGES += \
-    SnapdragonGallery
-    RetroMusicPlayer
+    SnapdragonGallery \
+    RetroMusicPlayer \
+    ChromePublic
 
 # Charger
 PRODUCT_PACKAGES += \

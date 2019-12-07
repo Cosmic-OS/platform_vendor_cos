@@ -10,6 +10,18 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
+# Chromium
+include $(CLEAR_VARS)
+LOCAL_MODULE := ChromePublic
+LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_OVERRIDES_PACKAGES := Browser Browser2
+LOCAL_MULTILIB := 32
+include $(BUILD_PREBUILT)
+
 # Copies the APN list file into system/etc for the product as apns-conf.xml.
 # In the case where $(CUSTOM_APNS_FILE) is defined, the content of $(CUSTOM_APNS_FILE)
 # is added or replaced to the $(DEFAULT_APNS_FILE).
