@@ -116,17 +116,16 @@ PRODUCT_PACKAGES += \
     DeskClock \
     Dialer \
     ExactCalculator \
-    Gallery2 \
     LatinIME \
     Launcher3 \
     messaging \
     Recorder \
-    RetroMusicPlayer \
     LiveWallpapersPicker
 
 # Cosmic-OS Packages
-# PRODUCT_PACKAGES += \
-    CosmicWalls
+PRODUCT_PACKAGES += \
+    SnapdragonGallery
+    RetroMusicPlayer
 
 # Charger
 PRODUCT_PACKAGES += \
