@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
     messaging \
-    Recorder \
+    SoundRecorder \
     LiveWallpapersPicker
 
 # Cosmic-OS Packages
