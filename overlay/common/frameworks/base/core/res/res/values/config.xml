@@ -109,15 +109,6 @@
         <item>com.google.android.gms</item>
     </string-array>
 
-    <!-- non blockable notification packages -->
-    <string-array name="config_nonBlockableNotificationPackages">
-        <item>com.google.android.dialer</item>
-        <item>com.google.android.dialer:phone_incoming_call</item>
-        <item>com.google.android.deskclock:Firing</item>
-        <item>com.google.android.setupwizard</item>
-        <item>com.google.android.apps.pixelmigrate</item>
-    </string-array>
-
     <!-- Taken from pixel -->
     <string name="config_defaultListenerAccessPackages">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as</string>
     <string name="config_defaultAssistantAccessPackage">com.google.android.ext.services</string>
@@ -134,32 +125,6 @@
     <string-array name="config_allowedSecureInstantAppSettings">
         <item>advertising_id</item>
         <item>limit_ad_tracking</item>
-    </string-array>
-    <string-array name="vendor_required_apps_managed_device">
-        <item>com.android.vending</item>
-        <item>com.google.android.gms</item>
-        <item>com.google.android.contacts</item>
-        <item>com.google.android.googlequicksearchbox</item>
-        <item>com.google.android.launcher</item>
-        <item>com.android.launcher</item>
-        <item>com.google.android.dialer</item>
-        <item>com.google.android.apps.messaging</item>
-        <item>com.google.android.setupwizard</item>
-    </string-array>
-    <string-array name="vendor_required_apps_managed_profile">
-        <item>com.android.vending</item>
-        <item>com.google.android.gms</item>
-        <item>com.google.android.contacts</item>
-    </string-array>
-    <string-array name="vendor_required_apps_managed_user">
-        <item>com.android.vending</item>
-        <item>com.google.android.gms</item>
-        <item>com.google.android.contacts</item>
-        <item>com.google.android.googlequicksearchbox</item>
-        <item>com.google.android.launcher</item>
-        <item>com.android.launcher</item>
-        <item>com.google.android.dialer</item>
-        <item>com.google.android.apps.messaging</item>
     </string-array>
     <string-array name="config_batteryPackageTypeService">
         <item>com.google.android.gms</item>
@@ -185,5 +150,41 @@
          Example: "com.android.wellbeing"
      -->
     <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
+
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
+
+    <!-- Set icon mask to circle -->
+    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- The name of the package that will hold the dialer role by default. -->
+    <string name="config_defaultDialer" translatable="false">org.codeaurora.dialer</string>
+
+    <!-- The name of the package that will hold the SMS role by default. -->
+    <string name="config_defaultSms" translatable="false">com.google.android.apps.messaging</string>
+
+    <string-array translatable="false" name="config_nonBlockableNotificationPackages">
+        <item>org.codeaurora.dialer</item>
+        <item>com.google.android.apps.messaging</item>
+    </string-array>
+
+    <!-- An array of packages that can make sound on the ringer stream in priority-only DND
+     mode -->
+    <string-array translatable="false" name="config_priorityOnlyDndExemptPackages">
+        <item>org.codeaurora.dialer</item>
+    </string-array>
+
+    <string-array translatable="false" name="required_apps_managed_user">
+        <item>com.android.settings</item>
+        <item>com.android.contacts</item>
+        <item>org.codeaurora.dialer</item>
+        <item>com.android.stk</item> <!-- Required by com.android.phone by certain carriers -->
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.android.documentsui</item>
+    </string-array>
 
 </resources>
