@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
     SnapdragonGallery \
     RetroMusicPlayer \
     ChromePublic \
-    ThemePicker
+    ThemePicker \
+    TurboPrebuilt
 
 # Charger
 PRODUCT_PACKAGES += \
