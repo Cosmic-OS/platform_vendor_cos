@@ -133,7 +133,8 @@ PRODUCT_PACKAGES += \
     RetroMusicPlayer \
     ChromePublic \
     ThemePicker \
-    TurboPrebuilt
+    TurboPrebuilt \
+    FontGoogleSansOverlay
 
 # Charger
 PRODUCT_PACKAGES += \
