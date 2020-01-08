@@ -63,7 +63,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cos/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
     vendor/cos/config/permissions/org.lineageos.snap.xml:system/etc/permissions/org.lineageos.snap.xml \
-    vendor/cos/config/permissions/privapp-permissions-custom-system.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-custom.xml \
+    vendor/cos/config/permissions/privapp-permissions-custom-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-custom.xml \
     vendor/cos/config/permissions/privapp-permissions-custom-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-custom.xml
 
 # init.d support
