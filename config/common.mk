@@ -106,11 +106,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_land_l=64 \
     ro.com.google.ime.kb_pad_land_r=64
 
-# Include AOSP audio files
-include vendor/cos/config/aosp_audio.mk
-
-# Include Cosmic audio files
-include vendor/cos/config/cos_audio.mk
+# Include Pixel audio files
+include vendor/cos/config/audio.mk
 
 # Include extra packages
 include vendor/cos/config/packages.mk
