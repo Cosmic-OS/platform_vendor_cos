@@ -1,0 +1,93 @@
+﻿Title - [ROM][CAF][Android 10][OFFICIAL] Cosmic-OS v5.0 - Quasar [DEVICE_NAME][DATE]
+[CENTER][IMG]https://raw.githubusercontent.com/Cosmic-OS/platform_manifest/quasar-release/Cosmic-OS%20Header.png[/IMG]
+
+[CODE]/*
+ * Your warranty is now void.
+ *
+ * I am not responsible for bricked devices, dead SD cards,
+ * thermonuclear war, or you getting fired because the alarm app failed. Please
+ * do some research if you have any concerns about features included in this ROM
+ * before flashing it! YOU are choosing to make these modifications, and if
+ * you point the finger at me for messing up your device, I will laugh at you.
+ */[/CODE]
+
+[IMG]https://img.techpowerup.org/200108/aboutus.png[/IMG]
+[B][SIZE="4"][COLOR="Blue"] Cosmic-OS is a pure CAF based custom ROM with focus on performance, stability and battery life with feature additions.[/COLOR][/SIZE][/B]
+[HIDE]
+[COLOR="Red"]Based on Android 10 with CAF Tag - LA.UM.8.11.r1-02900-NICOBAR.0 [/COLOR]
+[COLOR="Blue"]# Customizations:[/COLOR]
+
+- Based on CAF tag LA.UM.8.11.r1-02900-NICOBAR.0.
+- Our custom adaptive icons for all the apps.
+- ThemePicker app shipped with the ROM for basic system ui customisations.
+- Battery stats and management feature. 
+- Support for showing current and new version in package installer during apk installation.
+- Support to allow skipping back swipe gesture on top half or top smaller area of the screen.
+- Support for allowing user. to add/remove QS tile with one click
+- Removed the annoying build number display in the QS panel.
+- Support for asking pin on secure lockscreen for sensitive tiles.
+- Support to allow setting QS panel columns and Rows.
+- Support for QS Tile title visibility changes.
+- Support for Quick QS Pulldown.
+- Fixed and improved the screenrecorder and added red dot, quality settings, etc customisations for the same.
+- Support for displaying statusbar BT battery level.
+- Support for Google Sans font family in Font settings
+- Support for quickly disabling heads up for all apps except Dialer and Messaging apps (Less boring heads up)
+- Support to show Media heads up when new track is played
+- Support to display AOD while charging 
+- Support for Lockscreen Media Art Enabling and Blur options
+- User avatar/multiuser improvements
+- Support for MicroG
+- Android R inspired Screenrecord design (Try it, you guys will love it!)
+[COLOR="Red"]And many more being added regulary![/COLOR]
+[/HIDE]
+[IMG]https://img.techpowerup.org/200108/instructions.png[/IMG]
+
+[SIZE="4"][B][COLOR="Blue"]Instructions for flashing:[/COLOR][/B][/SIZE] 
+Download ROM and GApps. 
+Copy ROM and GApps to internal storage. 
+Wipe /data, /system and /cache. 
+Flash ROM and GApps (And any mods you use)
+Enjoy :P
+
+NOTE for maintainer: Edit this section according to your device changes as some devices needs additional flashing info.
+
+[SIZE="4"][B][COLOR="Blue"]Instructions for update:[/COLOR][/B][/SIZE] 
+Download ROM and GApps. 
+Copy ROM and GApps to internal storage. 
+Flash ROM and GApps (And any mods you use)
+
+[COLOR="Red"][B]Note:[/B] First boot and boots after every update can take some time. They may even loop a few times. We do not support custom kernels or mods like MultiROM. If you have an issue, make sure your edits aren't interfering with the issue you're reporting. [/COLOR]
+
+[IMG]https://img.techpowerup.org/200108/downloads.png[/IMG]
+
+[SIZE="5"][URL="ENTER DOWNLOAD LINK"]Official Builds[/URL] | [URL="opengapps.org"]GApps[/URL]
+[/SIZE]
+
+[IMG]https://img.techpowerup.org/200108/sources.png[/IMG]
+
+[SIZE="5"][URL="Add your Device Tree Source"]Device Tree[/URL] | [URL="Add your Kernel Source here"]Kernel[/URL] | [URL="https://github.com/Cosmic-OS/"]ROM[/URL][/SIZE]
+
+[IMG]https://img.techpowerup.org/200108/credits.png[/IMG]
+[B][SIZE=6][COLOR=#0000b3][U]Credits[/U][/COLOR][/SIZE][/B] 
+[SIZE=4]
+-[MENTION=5863325]sagarshah1729[/MENTION](Founder/Lead Developer)
+-[MENTION=5842339]Sid_Sun[/MENTION](Contributor)
+-[MENTION=5834335]Agent_fabulous[/MENTION](Contributor)
+- [URL="https://github.com/AOSPA"]Paranoid Android[/URL]
+- [URL="https://github.com/LineageOS"]LineageOS[/URL]
+[/SIZE]
+
+Have a feature request? Don't spam here. Visit our Telegram group!
+
+[B]Cosmic-OS Official Website:[/B] 
+[URL="https://cosmic-os.org"]Cosmic-OS[/URL] 
+
+[B]Cosmic-OS Official Telegram group:[/B] [URL="https://telegram.me/cosmicosofficial"]Telegram[/URL]
+
+[B][SIZE=6][COLOR=#0000b3][U]Support Us[/U][/COLOR][/SIZE][/B] 
+Hello, Gracious human! if you like our work, you may support us by donating:
+[URL="https://paypal.me/CosmicOS"]Paypal[/URL]
+[URL="https://m.imgur.com/a/jbQYS"]PayTM[/URL]
+[/CENTER]
+
