@@ -44,7 +44,7 @@ DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/cosmic-os.xml"
-custom_default_revision = "quasar-release"
+custom_default_revision = "radeon-release"
 custom_dependencies = "cos.dependencies"
 org_manifest = "devices"  # leave empty if org is provided in manifest
 org_display = "Cosmic-Devices"  # needed for displaying

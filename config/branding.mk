@@ -31,14 +31,14 @@ ifndef COSMIC_VERSION
   #        may include system pacthes for improvements and small new features.
   # Maintenance: The third number indicates a maintenance system upgrade with
   #              small, but effective improvements throughout the system.
-  COSMIC_VERSION := 5.0
+  COSMIC_VERSION := 6.0
 endif
 
 ifndef COSMIC_VERSION_CODE
   # As part of the cosmic platform, each Major system upgrade is released
   # under a specific codename. The indicates which codename for which
   # major system upgrade under the cosmic platform.
-  COSMIC_VERSION_CODE := Quasar
+  COSMIC_VERSION_CODE := Radeon
 endif
 
 ifndef COSMIC_BUILD_TYPE
