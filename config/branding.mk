@@ -46,18 +46,12 @@ ifndef COSMIC_BUILD_TYPE
   COSMIC_BUILD_TYPE := UNOFFICIAL
 endif
 
-ifndef CAF_VERSION
-  # Current CAF version.
-  CAF_VERSION := LA.UM.8.11.r1-02900-NICOBAR.0
-endif
-
 # Output target zip name
 COSMIC_TARGET_ZIP := Cosmic-OS-v$(COSMIC_VERSION)-$(COSMIC_VERSION_CODE)-$(COSMIC_BUILD)-$(shell date -u +%Y%m%d-%H%M)-$(COSMIC_BUILD_TYPE).zip
 
 # Branding Props
 CUSTOM_PROPERTIES += \
     ro.modversion=$(COSMIC_VERSION)-$(shell date -u +%Y%m%d) \
-    ro.qti.caf.version=$(CAF_VERSION) \
     ro.cos.version=$(COSMIC_VERSION) \
     ro.cos.version_code=$(COSMIC_VERSION_CODE) \
     ro.cos.device=$(COSMIC_BUILD) \

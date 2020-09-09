@@ -1,8 +1,10 @@
 PRODUCT_BRAND ?= Cosmic-OS
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+include vendor/cos/config/ProductConfigQcom.mk
 
-include device/qcom/common/common.mk
+PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -42,9 +44,6 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Disable qmi EAP-SIM security
-DISABLE_EAP_PROXY := true
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -62,9 +61,9 @@ endif
 # Some permissions
 PRODUCT_COPY_FILES += \
     vendor/cos/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/cos/config/permissions/privapp-permissions-aosp.xml:system/etc/permissions/privapp-permissions-aosp.xml \
     vendor/cos/config/permissions/org.lineageos.snap.xml:system/etc/permissions/org.lineageos.snap.xml \
-    vendor/cos/config/permissions/privapp-permissions-custom-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-custom.xml \
-    vendor/cos/config/permissions/privapp-permissions-custom-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-custom.xml
+    vendor/cos/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -99,11 +98,6 @@ PRODUCT_COPY_FILES += \
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
-# Fonts
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/cos/prebuilt/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
-	vendor/cos/prebuilt/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
-
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
@@ -125,6 +119,7 @@ PRODUCT_PACKAGES += \
     DeskClock \
     Dialer \
     ExactCalculator \
+    Gallery2 \
     LatinIME \
     Launcher3 \
     messaging \
@@ -133,12 +128,13 @@ PRODUCT_PACKAGES += \
 
 # Cosmic-OS Packages
 PRODUCT_PACKAGES += \
-    SnapdragonGallery \
     RetroMusicPlayer \
     ChromePublic \
-    ThemePicker \
-    TurboPrebuilt \
-    FontGoogleSansOverlay
+    ThemePicker
+
+# Cosmic-OS Packages
+# PRODUCT_PACKAGES += \
+    CosmicWalls
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -153,47 +149,9 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
-# Bluetooth Audio (A2DP)
-PRODUCT_PACKAGES += libbthost_if
-
-# Include explicitly to work around GMS issues
-PRODUCT_PACKAGES += libprotobuf-cpp-full
-
-# RCS Service
-PRODUCT_PACKAGES += \
-    rcscommon \
-    rcscommon.xml \
-    rcsservice \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_aidl_static \
-    rcs_service_api \
-    rcs_service_api.xml
-
-# MSIM manual provisioning
-PRODUCT_PACKAGES += telephony-ext
-PRODUCT_BOOT_JARS += telephony-ext
-
-# TCP Connection Management
-PRODUCT_PACKAGES += tcmiface
-PRODUCT_BOOT_JARS += tcmiface
-
-# LLVM
-ifneq ($(HOST_OS),linux)
-ifneq ($(sdclang_already_warned),true)
-$(warning **********************************************)
-$(warning * SDCLANG is not supported on non-linux hosts.)
-$(warning **********************************************)
-sdclang_already_warned := true
-endif
-else
-# include definitions for SDCLANG
-include vendor/cos/sdclang/sdclang.mk
-endif
-
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-ro.storage_manager.enabled=true
+    ro.storage_manager.enabled=true
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -206,5 +164,10 @@ include vendor/cos/config/branding.mk
 
 # OTA
 include vendor/cos/config/ota.mk
+
+# Clang
+ifeq ($(TARGET_USE_LATEST_CLANG),true)
+    TARGET_KERNEL_CLANG_VERSION := $(shell grep -v based prebuilts/clang/host/$(HOST_OS)-x86/*/AndroidVersion.txt | sort | tail -n 1 | cut -d : -f 2)
+endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
