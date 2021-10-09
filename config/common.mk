@@ -73,15 +73,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
 # Gapps
-ifeq ($(USE_GAPPS),true)
-$(call inherit-product, vendor/gapps/gapps.mk)
-endif
-
+$(call inherit-product, vendor/cos/config/gapps.mk)
 
 # Include AOSP audio files
 include vendor/cos/config/aosp_audio.mk
 
-# Include Awaken audio files
+# Include Cosmic audio files
 include vendor/cos/config/cos_audio.mk
 
 # Include extra packages
