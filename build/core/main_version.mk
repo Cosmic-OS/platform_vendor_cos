@@ -12,4 +12,5 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.cos.buildtype=$(COS_BUILD_TYPE) \
     ro.cos.fingerprint=$(ROM_FINGERPRINT) \
     ro.cos.version=$(COS_VERSION) \
+    ro.cos.base.version=$(COS_NUM_VER) \
     ro.modversion=$(COS_VERSION)
