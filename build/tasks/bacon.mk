@@ -39,6 +39,6 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	@echo -e ${CL_BLD}${CL_CYN}"===============================-Package complete-==============================="${CL_RST}
 	@echo -e ${CL_BLD}${CL_YLW}"Folder : "${CL_YLW} $(COS_TARGET_PACKAGE_FOLDER)${CL_RST}
 	@echo -e ${CL_BLD}${CL_YLW}"Zip    : "${CL_YLW} $(COS_TARGET_PACKAGE)${CL_RST}
-	@echo -e ${CL_BLD}${CL_YLW}"MD5    : "${CL_YLW}" `cat $(COS_TARGET_PACKAGE).md5sum | awk '{print $$1}' `"${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"SHA256 : "${CL_YLW}" `cat $(COS_TARGET_PACKAGE).sha256sum | awk '{print $$1}' `"${CL_RST}
 	@echo -e ${CL_BLD}${CL_YLW}"Size   : "${CL_YLW}" `du -sh $(COS_TARGET_PACKAGE) | awk '{print $$1}' `"${CL_RST}
 	@echo -e ${CL_BLD}${CL_CYN}"================================================================================"${CL_RST}
