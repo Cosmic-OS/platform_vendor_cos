@@ -15,9 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cos_arm64.mk \
-    $(LOCAL_DIR)/cos_arm64_ab.mk
+    $(LOCAL_DIR)/cos_arm64.mk
 
 COMMON_LUNCH_CHOICES := \
-    cos_arm64-userdebug \
-    cos_arm64_ab-userdebug
+    cos_arm64-userdebug
