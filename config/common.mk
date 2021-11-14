@@ -48,9 +48,11 @@ PRODUCT_COPY_FILES += \
 # Branding
 include vendor/cos/config/branding.mk
 
-# Copy all Cosmic-specific init rc files
-$(foreach f,$(wildcard vendor/cos/prebuilt/common/etc/init/*.rc),\
-	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
+# Cosmic-specific init rc file
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/etc/init/init.lineage-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.lineage-system.rc \
+    vendor/cos/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc \
+    vendor/cos/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
