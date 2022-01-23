@@ -1,7 +1,8 @@
 # Cosmic-OS packages
 PRODUCT_PACKAGES += \
     Updater \
-    ThemePicker
+    ThemePicker \
+    RepainterServicePriv
 
 # Extra tools in Cosmic
 PRODUCT_PACKAGES += \
