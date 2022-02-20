@@ -4,6 +4,11 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     RepainterServicePriv
 
+ifneq ($(USE_GAPPS),true)
+PRODUCT_PACKAGES += \
+    GmsCompat
+endif
+
 # Extra tools in Cosmic
 PRODUCT_PACKAGES += \
     7z \
