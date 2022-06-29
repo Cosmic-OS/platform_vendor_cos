@@ -121,6 +121,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_land_l=64 \
     ro.com.google.ime.kb_pad_land_r=64
 
+# Google LILY_EXPERIENCE feature
+PRODUCT_COPY_FILES += \
+    vendor/cos/prebuilt/common/etc/sysconfig/lily_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lily_experience.xml
+
 # Include Pixel audio files
 include vendor/cos/config/audio.mk
 
