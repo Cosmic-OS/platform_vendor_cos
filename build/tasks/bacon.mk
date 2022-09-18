@@ -14,14 +14,31 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# Cosmic OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+COS_TARGET_PACKAGE := $(PRODUCT_OUT)/Cosmic-OS-v$(COS_VERSION).zip
+COS_TARGET_PACKAGE_FOLDER := $(PRODUCT_OUT)
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
-	$(hide) $(SHA256) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).sha256sum
-	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(COS_TARGET_PACKAGE)
+	$(hide) $(SHA256) $(COS_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(COS_TARGET_PACKAGE).sha256sum
+
+	@echo -e ${CL_CYN}" ▄████▄   ▒█████    ██████  ███▄ ▄███▓ ██▓ ▄████▄      ▒█████    ██████  "${CL_RST}
+	@echo -e ${CL_CYN}"▒██▀ ▀█  ▒██▒  ██▒▒██    ▒ ▓██▒▀█▀ ██▒▓██▒▒██▀ ▀█     ▒██▒  ██▒▒██    ▒  "${CL_RST}
+	@echo -e ${CL_CYN}"▒▓█    ▄ ▒██░  ██▒░ ▓██▄   ▓██    ▓██░▒██▒▒▓█    ▄    ▒██░  ██▒░ ▓██▄    "${CL_RST}
+	@echo -e ${CL_CYN}"▒▓▓▄ ▄██▒▒██   ██░  ▒   ██▒▒██    ▒██ ░██░▒▓▓▄ ▄██▒   ▒██   ██░  ▒   ██▒ "${CL_RST}
+	@echo -e ${CL_CYN}"▒ ▓███▀ ░░ ████▓▒░▒██████▒▒▒██▒   ░██▒░██░▒ ▓███▀ ░   ░ ████▓▒░▒██████▒▒ "${CL_RST}
+	@echo -e ${CL_CYN}"░ ░▒ ▒  ░░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░ ▒░   ░  ░░▓  ░ ░▒ ▒  ░   ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░ "${CL_RST}
+	@echo -e ${CL_CYN}"  ░  ▒     ░ ▒ ▒░ ░ ░▒  ░ ░░  ░      ░ ▒ ░  ░  ▒        ░ ▒ ▒░ ░ ░▒  ░ ░ "${CL_RST}
+	@echo -e ${CL_CYN}"░        ░ ░ ░ ▒  ░  ░  ░  ░      ░    ▒ ░░           ░ ░ ░ ▒  ░  ░  ░   "${CL_RST}
+	@echo -e ${CL_CYN}"░ ░          ░ ░        ░         ░    ░  ░ ░             ░ ░        ░   "${CL_RST}
+	@echo -e ${CL_CYN}"░                                         ░                              "${CL_RST}
+	@echo -e ${CL_BLD}${CL_CYN}"===============================-Package complete-==============================="${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Folder : "${CL_YLW} $(COS_TARGET_PACKAGE_FOLDER)${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Zip    : "${CL_YLW} $(COS_TARGET_PACKAGE)${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"MD5    : "${CL_YLW}" `cat $(COS_TARGET_PACKAGE).md5sum | awk '{print $$1}' `"${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Size   : "${CL_YLW}" `du -sh $(COS_TARGET_PACKAGE) | awk '{print $$1}' `"${CL_RST}
+	@echo -e ${CL_BLD}${CL_CYN}"================================================================================"${CL_RST}

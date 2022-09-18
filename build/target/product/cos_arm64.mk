@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018-2021 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cos_arm64.mk \
-    $(LOCAL_DIR)/cos_arm64_ab.mk
+$(call inherit-product, build/target/product/aosp_arm64.mk)
+$(call inherit-product, build/target/product/gsi_release.mk)
 
-COMMON_LUNCH_CHOICES := \
-    cos_arm64-userdebug \
-    cos_arm64_ab-userdebug
+include vendor/cos/build/target/product/cos_generic_target.mk
+
+TARGET_NO_KERNEL_OVERRIDE := true
+
+PRODUCT_NAME := cos_arm64
